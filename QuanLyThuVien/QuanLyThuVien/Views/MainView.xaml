@@ -1,0 +1,104 @@
+﻿<Window x:Class="QuanLyThuVien.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyThuVien.Views"
+        mc:Ignorable="d"
+        Title="Phần mềm Quản lý Thư Viện" Height="760" Width="1366" MinHeight="700" MinWidth="1200"
+        WindowStartupLocation="CenterScreen" Background="{DynamicResource Brush.WindowBackground}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="280"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- SIDEBAR -->
+        <Border Grid.Column="0" Background="{DynamicResource Brush.Sidebar}" BorderBrush="{DynamicResource Brush.BorderSoft}" BorderThickness="0,0,1,0">
+            <Grid Margin="18">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="16"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0">
+                    <Border Style="{StaticResource HighlightCardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="Hệ thống" Style="{StaticResource CaptionTextStyle}" Margin="0,6,0,0"/>
+                            <TextBlock Text="Thư Viện" Style="{StaticResource TitleTextStyle}" FontSize="24"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource SidebarCardStyle}" Margin="0,12,0,0">
+                        <StackPanel>
+                            <TextBlock Text="Tài khoản đăng nhập" Style="{StaticResource CaptionTextStyle}"/>
+                            <TextBlock Text="{Binding CurrentAccountName}" Style="{StaticResource BodyTextStyle}" FontWeight="SemiBold" Margin="0,4,0,0"/>
+                            <TextBlock Text="{Binding CurrentAccountRole}" Style="{StaticResource CaptionTextStyle}" Margin="0,2,0,0"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+
+                <!-- MENU -->
+                <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <TextBlock Text="MENU CHỨC NĂNG" Style="{StaticResource CaptionTextStyle}" FontWeight="Bold" Margin="4,0,0,8"/>
+
+                        <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowDashboardCommand}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🏠" Margin="0,0,10,0" FontSize="15"/>
+                                <TextBlock Text="Tổng quan"/>
+                            </StackPanel>
+                        </Button>
+
+                        <Expander Header="Quản lý danh mục" IsExpanded="True" Style="{StaticResource SidebarExpanderStyle}">
+                            <StackPanel Margin="8,8,0,0">
+                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowSachCommand}">
+                                    <TextBlock Text="• Quản lý Sách"/>
+                                </Button>
+                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowDocGiaCommand}">
+                                    <TextBlock Text="• Quản lý Độc giả"/>
+                                </Button>
+                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowNhanVienCommand}">
+                                    <TextBlock Text="• Quản lý Nhân viên"/>
+                                </Button>
+                            </StackPanel>
+                        </Expander>
+
+                        <Expander Header="Nghiệp vụ Mượn/Trả" IsExpanded="True" Style="{StaticResource SidebarExpanderStyle}">
+                            <StackPanel Margin="8,8,0,0">
+                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowPhieuMuonCommand}">
+                                    <TextBlock Text="• Lập phiếu mượn"/>
+                                </Button>
+                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowTraSachCommand}">
+                                    <TextBlock Text="• Trả sách &amp; Phạt"/>
+                                </Button>
+                            </StackPanel>
+                        </Expander>
+
+                        <Expander Header="Hệ thống &amp; Thống kê" IsExpanded="False" Style="{StaticResource SidebarExpanderStyle}">
+                            <StackPanel Margin="8,8,0,0">
+                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowThongKeCommand}">
+                                    <TextBlock Text="• Báo cáo Thống kê"/>
+                                </Button>
+                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowProfileCommand}">
+                                    <TextBlock Text="• Tài khoản cá nhân"/>
+                                </Button>
+                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowSettingsCommand}">
+                                    <TextBlock Text="• Cài đặt &amp; Sao lưu"/>
+                                </Button>
+                            </StackPanel>
+                        </Expander>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <Button Grid.Row="3" Style="{StaticResource DangerButtonStyle}" Command="{Binding LogoutCommand}">
+                    <TextBlock Text="Đăng xuất"/>
+                </Button>
+            </Grid>
+        </Border>
+
+        <!-- NƠI HIỂN THỊ CÁC USER CONTROL -->
+        <ContentControl Grid.Column="1" Content="{Binding CurrentView}" Margin="16"/>
+    </Grid>
+</Window>

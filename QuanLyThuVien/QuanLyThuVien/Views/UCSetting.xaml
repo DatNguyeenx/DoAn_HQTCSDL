@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="QuanLyThuVien.Views.UCSetting"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QuanLyThuVien.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="10">
+            <Border Style="{StaticResource HighlightCardStyle}" Margin="0,0,0,14">
+                <StackPanel>
+                    <TextBlock Text="Cài đặt Hệ thống &amp; Bảo mật" Style="{StaticResource TitleTextStyle}"/>
+                    <TextBlock Text="Thiết lập tham số thư viện và an toàn dữ liệu" Style="{StaticResource CaptionTextStyle}" Margin="0,10,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource CardStyle}" Margin="0,0,0,14">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Margin="0,0,0,15">
+                        <TextBlock Text="Quy định thư viện" Style="{StaticResource SectionTitleTextStyle}"/>
+                        <TextBlock Text="Mức phạt tiền mỗi ngày quá hạn: 5000 VNĐ (Thiết lập mặc định trong CSDL)" Style="{StaticResource CaptionTextStyle}"/>
+                        <TextBlock Text="Số sách mượn tối đa: 3 cuốn (Kiểm soát bởi Trigger CSDL)" Style="{StaticResource CaptionTextStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1">
+                        <TextBlock Text="Bảo mật và an toàn dữ liệu" Style="{StaticResource SectionTitleTextStyle}"/>
+                        <TextBlock Text="Thực hiện sao lưu Database (SQL Server) ra file .bak để phòng rủi ro mất dữ liệu." Style="{StaticResource CaptionTextStyle}" Margin="0,0,0,10"/>
+
+                        <WrapPanel>
+                            <Button Content="Sao lưu Dữ liệu (Backup)" Command="{Binding BackupDatabaseCommand}" Style="{StaticResource SuccessButtonStyle}" Width="200"/>
+                            <Button Content="Phục hồi Dữ liệu (Restore)" Command="{Binding RestoreDatabaseCommand}" Style="{StaticResource DangerButtonStyle}" Width="200"/>
+                        </WrapPanel>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
