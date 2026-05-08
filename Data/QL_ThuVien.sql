@@ -404,7 +404,67 @@ INSERT INTO BanSaoSach (MaBS, MaSach, TinhTrang) VALUES
 ('BS031', 'SA031', N'Sẵn sàng'), ('BS032', 'SA032', N'Sẵn sàng'), ('BS033', 'SA033', N'Sẵn sàng'), ('BS034', 'SA034', N'Sẵn sàng'), ('BS035', 'SA035', N'Sẵn sàng'),
 ('BS036', 'SA036', N'Sẵn sàng'), ('BS037', 'SA037', N'Sẵn sàng'), ('BS038', 'SA038', N'Sẵn sàng'), ('BS039', 'SA039', N'Sẵn sàng'), ('BS040', 'SA040', N'Sẵn sàng'),
 ('BS041', 'SA041', N'Sẵn sàng'), ('BS042', 'SA042', N'Sẵn sàng'), ('BS043', 'SA043', N'Sẵn sàng'), ('BS044', 'SA044', N'Sẵn sàng'), ('BS045', 'SA045', N'Sẵn sàng'),
-('BS046', 'SA046', N'Sẵn sàng'), ('BS047', 'SA047', N'Sẵn sàng'), ('BS048', 'SA048', N'Sẵn sàng'), ('BS049', 'SA049', N'Sẵn sàng'), ('BS050', 'SA050', N'Sẵn sàng');
+('BS046', 'SA046', N'Sẵn sàng'), ('BS047', 'SA047', N'Sẵn sàng'), ('BS048', 'SA048', N'Sẵn sàng'), ('BS049', 'SA049', N'Sẵn sàng'), ('BS050', 'SA050', N'Sẵn sàng'),
+('BS051', 'SA051', N'Sẵn sàng'), ('BS052', 'SA052', N'Sẵn sàng'), ('BS053', 'SA053', N'Sẵn sàng'), ('BS054', 'SA054', N'Sẵn sàng'), ('BS055', 'SA055', N'Sẵn sàng'),
+('BS056', 'SA056', N'Sẵn sàng'), ('BS057', 'SA057', N'Sẵn sàng'), ('BS058', 'SA058', N'Sẵn sàng'), ('BS059', 'SA059', N'Sẵn sàng'), ('BS060', 'SA060', N'Sẵn sàng'),
+('BS061', 'SA061', N'Sẵn sàng'), ('BS062', 'SA062', N'Sẵn sàng'), ('BS063', 'SA063', N'Sẵn sàng'), ('BS064', 'SA064', N'Sẵn sàng'), ('BS065', 'SA065', N'Sẵn sàng'),
+('BS066', 'SA066', N'Sẵn sàng'), ('BS067', 'SA067', N'Sẵn sàng'), ('BS068', 'SA068', N'Sẵn sàng'), ('BS069', 'SA069', N'Sẵn sàng'), ('BS070', 'SA070', N'Sẵn sàng'),
+('BS071', 'SA071', N'Sẵn sàng'), ('BS072', 'SA072', N'Sẵn sàng'), ('BS073', 'SA073', N'Sẵn sàng'), ('BS074', 'SA074', N'Sẵn sàng'), ('BS075', 'SA075', N'Sẵn sàng'),
+('BS076', 'SA076', N'Sẵn sàng'), ('BS077', 'SA077', N'Sẵn sàng'), ('BS078', 'SA078', N'Sẵn sàng'), ('BS079', 'SA079', N'Sẵn sàng'), ('BS080', 'SA080', N'Sẵn sàng'),
+('BS081', 'SA081', N'Sẵn sàng'), ('BS082', 'SA082', N'Sẵn sàng'), ('BS083', 'SA083', N'Sẵn sàng'), ('BS084', 'SA084', N'Sẵn sàng'), ('BS085', 'SA085', N'Sẵn sàng'),
+('BS086', 'SA086', N'Sẵn sàng'), ('BS087', 'SA087', N'Sẵn sàng'), ('BS088', 'SA088', N'Sẵn sàng'), ('BS089', 'SA089', N'Sẵn sàng'), ('BS090', 'SA090', N'Sẵn sàng'),
+('BS091', 'SA091', N'Sẵn sàng'), ('BS092', 'SA092', N'Sẵn sàng'), ('BS093', 'SA093', N'Sẵn sàng'), ('BS094', 'SA094', N'Sẵn sàng'), ('BS095', 'SA095', N'Sẵn sàng'),
+('BS096', 'SA096', N'Sẵn sàng'), ('BS097', 'SA097', N'Sẵn sàng'), ('BS098', 'SA098', N'Sẵn sàng'), ('BS099', 'SA099', N'Sẵn sàng'), ('BS100', 'SA100', N'Sẵn sàng'),
+('BS101', 'SA001', N'Đang mượn'), ('BS102', 'SA002', N'Sẵn sàng'), ('BS103', 'SA003', N'Sẵn sàng'), ('BS104', 'SA004', N'Sẵn sàng'), ('BS105', 'SA005', N'Sẵn sàng'),
+('BS106', 'SA006', N'Sẵn sàng'), ('BS107', 'SA007', N'Sẵn sàng'), ('BS108', 'SA008', N'Sẵn sàng'), ('BS109', 'SA009', N'Sẵn sàng'), ('BS110', 'SA010', N'Sẵn sàng'),
+('BS111', 'SA011', N'Sẵn sàng'), ('BS112', 'SA012', N'Sẵn sàng'), ('BS113', 'SA013', N'Sẵn sàng'), ('BS114', 'SA014', N'Sẵn sàng'), ('BS115', 'SA015', N'Sẵn sàng'),
+('BS116', 'SA016', N'Sẵn sàng'), ('BS117', 'SA017', N'Sẵn sàng'), ('BS118', 'SA018', N'Sẵn sàng'), ('BS119', 'SA019', N'Sẵn sàng'), ('BS120', 'SA020', N'Sẵn sàng'),
+('BS121', 'SA021', N'Sẵn sàng'), ('BS122', 'SA022', N'Sẵn sàng'), ('BS123', 'SA023', N'Sẵn sàng'), ('BS124', 'SA024', N'Sẵn sàng'), ('BS125', 'SA025', N'Sẵn sàng'),
+('BS126', 'SA026', N'Sẵn sàng'), ('BS127', 'SA027', N'Sẵn sàng'), ('BS128', 'SA028', N'Sẵn sàng'), ('BS129', 'SA029', N'Sẵn sàng'), ('BS130', 'SA030', N'Sẵn sàng'),
+('BS131', 'SA031', N'Sẵn sàng'), ('BS132', 'SA032', N'Sẵn sàng'), ('BS133', 'SA033', N'Sẵn sàng'), ('BS134', 'SA034', N'Sẵn sàng'), ('BS135', 'SA035', N'Sẵn sàng'),
+('BS136', 'SA036', N'Sẵn sàng'), ('BS137', 'SA037', N'Sẵn sàng'), ('BS138', 'SA038', N'Sẵn sàng'), ('BS139', 'SA039', N'Sẵn sàng'), ('BS140', 'SA040', N'Sẵn sàng'),
+('BS141', 'SA041', N'Sẵn sàng'), ('BS142', 'SA042', N'Sẵn sàng'), ('BS143', 'SA043', N'Sẵn sàng'), ('BS144', 'SA044', N'Sẵn sàng'), ('BS145', 'SA045', N'Sẵn sàng'),
+('BS146', 'SA046', N'Sẵn sàng'), ('BS147', 'SA047', N'Sẵn sàng'), ('BS148', 'SA048', N'Sẵn sàng'), ('BS149', 'SA049', N'Sẵn sàng'), ('BS150', 'SA050', N'Sẵn sàng'),
+('BS151', 'SA051', N'Sẵn sàng'), ('BS152', 'SA052', N'Sẵn sàng'), ('BS153', 'SA053', N'Đang mượn'), ('BS154', 'SA054', N'Sẵn sàng'), ('BS155', 'SA055', N'Sẵn sàng'),
+('BS156', 'SA056', N'Sẵn sàng'), ('BS157', 'SA057', N'Sẵn sàng'), ('BS158', 'SA058', N'Sẵn sàng'), ('BS159', 'SA059', N'Sẵn sàng'), ('BS160', 'SA060', N'Sẵn sàng'),
+('BS161', 'SA061', N'Sẵn sàng'), ('BS162', 'SA062', N'Sẵn sàng'), ('BS163', 'SA063', N'Sẵn sàng'), ('BS164', 'SA064', N'Sẵn sàng'), ('BS165', 'SA065', N'Sẵn sàng'),
+('BS166', 'SA066', N'Sẵn sàng'), ('BS167', 'SA067', N'Sẵn sàng'), ('BS168', 'SA068', N'Sẵn sàng'), ('BS169', 'SA069', N'Sẵn sàng'), ('BS170', 'SA070', N'Sẵn sàng'),
+('BS171', 'SA071', N'Sẵn sàng'), ('BS172', 'SA072', N'Sẵn sàng'), ('BS173', 'SA073', N'Sẵn sàng'), ('BS174', 'SA074', N'Sẵn sàng'), ('BS175', 'SA075', N'Sẵn sàng'),
+('BS176', 'SA076', N'Sẵn sàng'), ('BS177', 'SA077', N'Sẵn sàng'), ('BS178', 'SA078', N'Sẵn sàng'), ('BS179', 'SA079', N'Sẵn sàng'), ('BS180', 'SA080', N'Sẵn sàng'),
+('BS181', 'SA081', N'Sẵn sàng'), ('BS182', 'SA082', N'Sẵn sàng'), ('BS183', 'SA083', N'Sẵn sàng'), ('BS184', 'SA084', N'Sẵn sàng'), ('BS185', 'SA085', N'Sẵn sàng'),
+('BS186', 'SA086', N'Sẵn sàng'), ('BS187', 'SA087', N'Sẵn sàng'), ('BS188', 'SA088', N'Sẵn sàng'), ('BS189', 'SA089', N'Sẵn sàng'), ('BS190', 'SA090', N'Sẵn sàng'),
+('BS191', 'SA091', N'Sẵn sàng'), ('BS192', 'SA092', N'Sẵn sàng'), ('BS193', 'SA093', N'Sẵn sàng'), ('BS194', 'SA094', N'Sẵn sàng'), ('BS195', 'SA095', N'Sẵn sàng'),
+('BS196', 'SA096', N'Sẵn sàng'), ('BS197', 'SA097', N'Sẵn sàng'), ('BS198', 'SA098', N'Sẵn sàng'), ('BS199', 'SA099', N'Sẵn sàng'), ('BS200', 'SA100', N'Sẵn sàng'),
+('BS201', 'SA001', N'Sẵn sàng'), ('BS202', 'SA002', N'Sẵn sàng'), ('BS203', 'SA003', N'Sẵn sàng'), ('BS204', 'SA004', N'Sẵn sàng'), ('BS205', 'SA005', N'Sẵn sàng'),
+('BS206', 'SA006', N'Sẵn sàng'), ('BS207', 'SA007', N'Sẵn sàng'), ('BS208', 'SA008', N'Sẵn sàng'), ('BS209', 'SA009', N'Sẵn sàng'), ('BS210', 'SA010', N'Sẵn sàng'),
+('BS211', 'SA011', N'Sẵn sàng'), ('BS212', 'SA012', N'Sẵn sàng'), ('BS213', 'SA013', N'Sẵn sàng'), ('BS214', 'SA014', N'Sẵn sàng'), ('BS215', 'SA015', N'Sẵn sàng'),
+('BS216', 'SA016', N'Sẵn sàng'), ('BS217', 'SA017', N'Sẵn sàng'), ('BS218', 'SA018', N'Sẵn sàng'), ('BS219', 'SA019', N'Sẵn sàng'), ('BS220', 'SA020', N'Sẵn sàng'),
+('BS221', 'SA021', N'Sẵn sàng'), ('BS222', 'SA022', N'Sẵn sàng'), ('BS223', 'SA023', N'Sẵn sàng'), ('BS224', 'SA024', N'Sẵn sàng'), ('BS225', 'SA025', N'Sẵn sàng'),
+('BS226', 'SA026', N'Sẵn sàng'), ('BS227', 'SA027', N'Sẵn sàng'), ('BS228', 'SA028', N'Sẵn sàng'), ('BS229', 'SA029', N'Sẵn sàng'), ('BS230', 'SA030', N'Sẵn sàng'),
+('BS231', 'SA031', N'Sẵn sàng'), ('BS232', 'SA032', N'Sẵn sàng'), ('BS233', 'SA033', N'Sẵn sàng'), ('BS234', 'SA034', N'Sẵn sàng'), ('BS235', 'SA035', N'Sẵn sàng'),
+('BS236', 'SA036', N'Sẵn sàng'), ('BS237', 'SA037', N'Sẵn sàng'), ('BS238', 'SA038', N'Sẵn sàng'), ('BS239', 'SA039', N'Sẵn sàng'), ('BS240', 'SA040', N'Sẵn sàng'),
+('BS241', 'SA041', N'Sẵn sàng'), ('BS242', 'SA042', N'Sẵn sàng'), ('BS243', 'SA043', N'Sẵn sàng'), ('BS244', 'SA044', N'Sẵn sàng'), ('BS245', 'SA045', N'Sẵn sàng'),
+('BS246', 'SA046', N'Sẵn sàng'), ('BS247', 'SA047', N'Sẵn sàng'), ('BS248', 'SA048', N'Sẵn sàng'), ('BS249', 'SA049', N'Sẵn sàng'), ('BS250', 'SA050', N'Sẵn sàng'),
+('BS251', 'SA051', N'Sẵn sàng'), ('BS252', 'SA052', N'Sẵn sàng'), ('BS253', 'SA053', N'Sẵn sàng'), ('BS254', 'SA054', N'Sẵn sàng'), ('BS255', 'SA055', N'Sẵn sàng'),
+('BS256', 'SA056', N'Sẵn sàng'), ('BS257', 'SA057', N'Sẵn sàng'), ('BS258', 'SA058', N'Sẵn sàng'), ('BS259', 'SA059', N'Sẵn sàng'), ('BS260', 'SA060', N'Sẵn sàng'),
+('BS261', 'SA061', N'Sẵn sàng'), ('BS262', 'SA062', N'Sẵn sàng'), ('BS263', 'SA063', N'Sẵn sàng'), ('BS264', 'SA064', N'Sẵn sàng'), ('BS265', 'SA065', N'Sẵn sàng'),
+('BS266', 'SA066', N'Sẵn sàng'), ('BS267', 'SA067', N'Sẵn sàng'), ('BS268', 'SA068', N'Sẵn sàng'), ('BS269', 'SA069', N'Sẵn sàng'), ('BS270', 'SA070', N'Sẵn sàng'),
+('BS271', 'SA071', N'Sẵn sàng'), ('BS272', 'SA072', N'Sẵn sàng'), ('BS273', 'SA073', N'Sẵn sàng'), ('BS274', 'SA074', N'Sẵn sàng'), ('BS275', 'SA075', N'Sẵn sàng'),
+('BS276', 'SA076', N'Sẵn sàng'), ('BS277', 'SA077', N'Sẵn sàng'), ('BS278', 'SA078', N'Sẵn sàng'), ('BS279', 'SA079', N'Sẵn sàng'), ('BS280', 'SA080', N'Sẵn sàng'),
+('BS281', 'SA081', N'Sẵn sàng'), ('BS282', 'SA082', N'Sẵn sàng'), ('BS283', 'SA083', N'Sẵn sàng'), ('BS284', 'SA084', N'Sẵn sàng'), ('BS285', 'SA085', N'Sẵn sàng'),
+('BS286', 'SA086', N'Sẵn sàng'), ('BS287', 'SA087', N'Sẵn sàng'), ('BS288', 'SA088', N'Sẵn sàng'), ('BS289', 'SA089', N'Sẵn sàng'), ('BS290', 'SA090', N'Sẵn sàng'),
+('BS291', 'SA091', N'Sẵn sàng'), ('BS292', 'SA092', N'Sẵn sàng'), ('BS293', 'SA093', N'Sẵn sàng'), ('BS294', 'SA094', N'Sẵn sàng'), ('BS295', 'SA095', N'Sẵn sàng'),
+('BS296', 'SA096', N'Sẵn sàng'), ('BS297', 'SA097', N'Sẵn sàng'), ('BS298', 'SA098', N'Sẵn sàng'), ('BS299', 'SA099', N'Sẵn sàng'), ('BS300', 'SA100', N'Sẵn sàng'),
+('BS301', 'SA001', N'Sẵn sàng'), ('BS302', 'SA002', N'Sẵn sàng'), ('BS303', 'SA003', N'Sẵn sàng'), ('BS304', 'SA004', N'Sẵn sàng'), ('BS305', 'SA005', N'Sẵn sàng'),
+('BS306', 'SA006', N'Sẵn sàng'), ('BS307', 'SA007', N'Sẵn sàng'), ('BS308', 'SA008', N'Sẵn sàng'), ('BS309', 'SA009', N'Sẵn sàng'), ('BS310', 'SA010', N'Sẵn sàng'),
+('BS311', 'SA011', N'Sẵn sàng'), ('BS312', 'SA012', N'Sẵn sàng'), ('BS313', 'SA013', N'Sẵn sàng'), ('BS314', 'SA014', N'Sẵn sàng'), ('BS315', 'SA015', N'Sẵn sàng'),
+('BS316', 'SA016', N'Sẵn sàng'), ('BS317', 'SA017', N'Sẵn sàng'), ('BS318', 'SA018', N'Sẵn sàng'), ('BS319', 'SA019', N'Sẵn sàng'), ('BS320', 'SA020', N'Sẵn sàng'),
+('BS321', 'SA021', N'Sẵn sàng'), ('BS322', 'SA022', N'Sẵn sàng'), ('BS323', 'SA023', N'Sẵn sàng'), ('BS324', 'SA024', N'Sẵn sàng'), ('BS325', 'SA025', N'Sẵn sàng'),
+('BS326', 'SA026', N'Sẵn sàng'), ('BS327', 'SA027', N'Sẵn sàng'), ('BS328', 'SA028', N'Sẵn sàng'), ('BS329', 'SA029', N'Sẵn sàng'), ('BS330', 'SA030', N'Sẵn sàng'),
+('BS331', 'SA031', N'Sẵn sàng'), ('BS332', 'SA032', N'Sẵn sàng'), ('BS333', 'SA033', N'Sẵn sàng'), ('BS334', 'SA034', N'Sẵn sàng'), ('BS335', 'SA035', N'Sẵn sàng'),
+('BS336', 'SA036', N'Sẵn sàng'), ('BS337', 'SA037', N'Sẵn sàng'), ('BS338', 'SA038', N'Sẵn sàng'), ('BS339', 'SA039', N'Sẵn sàng'), ('BS340', 'SA040', N'Sẵn sàng'),
+('BS341', 'SA041', N'Sẵn sàng'), ('BS342', 'SA042', N'Sẵn sàng'), ('BS343', 'SA043', N'Sẵn sàng'), ('BS344', 'SA044', N'Sẵn sàng'), ('BS345', 'SA045', N'Sẵn sàng'),
+('BS346', 'SA046', N'Sẵn sàng'), ('BS347', 'SA047', N'Sẵn sàng'), ('BS348', 'SA048', N'Sẵn sàng'), ('BS349', 'SA049', N'Sẵn sàng'), ('BS350', 'SA050', N'Sẵn sàng');
 
 -- ==========================================
 -- 3. NHÓM CON NGƯỜI (NHÂN VIÊN, ĐỘC GIẢ)
@@ -655,21 +715,8 @@ BEGIN
         -- Nếu có phạt thì tự động sinh Phiếu Phạt
         IF (@TienPhat > 0)
         BEGIN
-            DECLARE @MaPhieuPhat CHAR(5);
-            DECLARE @MaxID CHAR(5) = (SELECT MAX(MaPhieuPhat) FROM PhieuPhat);
-            
-            -- Xử lý sinh mã Phiếu phạt tự động tăng (PP001, PP002...)
-            IF @MaxID IS NULL
-                SET @MaPhieuPhat = 'PP001';
-            ELSE
-            BEGIN
-                -- Lấy 3 ký tự cuối chuyển thành số, cộng thêm 1, rồi ghép lại với 'PP'
-                DECLARE @NextNum INT = CAST(RIGHT(@MaxID, 3) AS INT) + 1;
-                SET @MaPhieuPhat = 'PP' + RIGHT('000' + CAST(@NextNum AS VARCHAR), 3);
-            END
-            
-            INSERT INTO PhieuPhat (MaPhieuPhat, MaPhieu, MaBS, SoTienPhat, LyDo)
-            VALUES (@MaPhieuPhat, @MaPhieu, @MaBS, @TienPhat, N'Trả trễ hạn');
+            INSERT INTO PhieuPhat (MaPhieu, MaBS, SoTienPhat, LyDo)
+            VALUES (@MaPhieu, @MaBS, @TienPhat, N'Trả trễ hạn');
         END
 
         COMMIT TRANSACTION;
@@ -700,7 +747,7 @@ BEGIN
     BEGIN TRY
      
         DECLARE @TinhTrang NVARCHAR(50);
-        SELECT @TinhTrang = TinhTrang FROM BanSaoSach WHERE MaBS = @MaBS;
+        SELECT @TinhTrang = TinhTrang FROM BanSaoSach WITH (UPDLOCK) WHERE MaBS = @MaBS;
 
         IF @TinhTrang IS NULL
         BEGIN

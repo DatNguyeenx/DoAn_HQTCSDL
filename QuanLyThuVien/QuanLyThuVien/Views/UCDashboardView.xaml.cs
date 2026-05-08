@@ -23,6 +23,7 @@ namespace QuanLyThuVien.Views
         public UCDashboardView()
         {
             InitializeComponent();
+            this.DataContext = new ViewModels.DashboardViewModel();
         }
     }
 }

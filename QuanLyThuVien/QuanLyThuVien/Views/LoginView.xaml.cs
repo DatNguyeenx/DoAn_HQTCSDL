@@ -23,7 +23,7 @@ namespace QuanLyThuVien.Views
         public LoginView()
         {
             InitializeComponent();
-            this.DataContext = new LoginViewModel();
+            this.DataContext = new QuanLyThuVien.ViewModels.LoginViewModel();
         }
     }
 }

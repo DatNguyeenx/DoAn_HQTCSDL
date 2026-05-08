@@ -8,75 +8,119 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using QuanLyThuVien.Models;
+using QuanLyThuVien.Views;
 
 namespace QuanLyThuVien.ViewModels
 {
-    class LoginViewModel : BaseViewModel
+    public class LoginViewModel : BaseViewModel
     {
+
         private string _username;
         public string Username
         {
-            get => _username;
-            set { _username = value; OnPropertyChanged(nameof(Username)); }
+            get { return _username; }
+            set
+            {
+                _username = value;
+                OnPropertyChanged(nameof(Username));
+            }
         }
 
         private string _errorMessage;
         public string ErrorMessage
         {
-            get => _errorMessage;
-            set { _errorMessage = value; OnPropertyChanged(nameof(ErrorMessage)); }
+            get { return _errorMessage; }
+            set
+            {
+                _errorMessage = value;
+                OnPropertyChanged(nameof(ErrorMessage));
+            }
         }
 
         public ICommand LoginCommand { get; set; }
+        public ICommand ExitCommand { get; set; }
 
         public LoginViewModel()
         {
-            // Reset thông báo lỗi
+            Username = "";
             ErrorMessage = "";
 
-            LoginCommand = new RelayCommand((parameter) =>
+            LoginCommand = new RelayCommand(ExecuteLogin, CanExecuteLogin);
+            ExitCommand = new RelayCommand(ExecuteExit, CanExecuteExit);
+        }
+
+        private bool CanExecuteLogin(object parameter)
+        {
+            return true;
+        }
+
+        private void ExecuteLogin(object parameter)
+        {
+            var passwordBox = parameter as PasswordBox;
+            if (passwordBox == null) return;
+
+            string password = passwordBox.Password;
+
+            if (string.IsNullOrWhiteSpace(Username) || string.IsNullOrWhiteSpace(password))
             {
-                // parameter chính là PasswordBox được truyền từ XAML
-                var passwordBox = parameter as PasswordBox;
-                if (passwordBox == null) return;
+                ErrorMessage = "Vui lòng nhập đầy đủ Tên đăng nhập và Mật khẩu!";
+                return;
+            }
 
-                string password = passwordBox.Password;
-
-                if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(password))
+            try
+            {
+                using (var context = new QuanLyThuVienEntities())
                 {
-                    ErrorMessage = "Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu!";
-                    return;
-                }
+                    // So khớp tài khoản dưới Database
+                    var acc = context.NhanViens.FirstOrDefault(x => x.TenDN == Username && x.MatKhau == password);
 
-                using (var db = new QuanLyThuVienEntities())
-                {
-                    // Truy vấn bảng NhanVien kiểm tra tài khoản
-                    var account = db.NhanViens.FirstOrDefault(x => x.TenDN == Username && x.MatKhau == password);
-
-                    if (account != null)
+                    if (acc != null)
                     {
                         ErrorMessage = "";
+                        GlobalStore.CurrentAccount = acc;
 
-                        // Khởi tạo cửa sổ chính
-                        MainView mainWindow = new MainView();
 
-                        // Khởi tạo MainViewModel và truyền thông tin tài khoản vào
-                        MainViewModel mainViewModel = new MainViewModel(account);
-                        mainWindow.DataContext = mainViewModel;
+                        MainView mainView = new MainView();
+                        MainViewModel mainVM = new MainViewModel();
 
-                        // Lấy cửa sổ Login hiện tại để đóng lại
+                        mainVM.CurrentAccountName = acc.HoTen;
+                        mainVM.CurrentAccountRole = acc.ChucVu;
+
+                        mainView.DataContext = mainVM;
+                        mainView.Show();
+
+                        // Đóng LoginView
                         Window loginWindow = Window.GetWindow(passwordBox);
-
-                        // Mở cửa sổ chính và đóng cửa sổ login
-                        mainWindow.Show();
-                        loginWindow?.Close();
+                        if (loginWindow != null)
+                        {
+                            loginWindow.Close();
+                        }
                     }
                     else
                     {
                         ErrorMessage = "Tên đăng nhập hoặc mật khẩu không chính xác!";
                     }
                 }
-            }, (parameter) => true);
+            }
+            catch (Exception ex)
+            {
+                ErrorMessage = "Lỗi kết nối cơ sở dữ liệu: " + ex.Message;
+            }
         }
+
+        private bool CanExecuteExit(object parameter)
+        {
+            return true;
+        }
+
+        private void ExecuteExit(object parameter)
+        {
+            Application.Current.Shutdown();
+        }
+    }
+    public static class GlobalStore
+    {
+        public static NhanVien CurrentAccount { get; set; }
     }
 }

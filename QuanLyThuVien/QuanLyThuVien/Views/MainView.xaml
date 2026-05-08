@@ -13,7 +13,6 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- SIDEBAR -->
         <Border Grid.Column="0" Background="{DynamicResource Brush.Sidebar}" BorderBrush="{DynamicResource Brush.BorderSoft}" BorderThickness="0,0,1,0">
             <Grid Margin="18">
                 <Grid.RowDefinitions>
@@ -39,66 +38,78 @@
                     </Border>
                 </StackPanel>
 
-                <!-- MENU -->
-                <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+                <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" Padding="0,0,8,0" Margin="0,0,-8,0">
                     <StackPanel>
                         <TextBlock Text="MENU CHỨC NĂNG" Style="{StaticResource CaptionTextStyle}" FontWeight="Bold" Margin="4,0,0,8"/>
-
                         <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowDashboardCommand}">
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="🏠" Margin="0,0,10,0" FontSize="15"/>
-                                <TextBlock Text="Tổng quan"/>
-                            </StackPanel>
-                        </Button>
 
-                        <Expander Header="Quản lý danh mục" IsExpanded="True" Style="{StaticResource SidebarExpanderStyle}">
+                            <StackPanel Orientation="Horizontal">
+
+                                <TextBlock Text="🏠" Margin="0,0,10,0" FontSize="15"/>
+
+                                <TextBlock Text="Tổng quan"/>
+
+                            </StackPanel>
+
+                        </Button>
+                        <Expander Header="Kho Sách &amp; Danh Mục" IsExpanded="True" Style="{StaticResource SidebarExpanderStyle}">
                             <StackPanel Margin="8,8,0,0">
                                 <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowSachCommand}">
-                                    <TextBlock Text="• Quản lý Sách"/>
+                                    <TextBlock Text="• Quản lý Đầu sách"/>
                                 </Button>
+                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowBanSaoCommand}">
+                                    <TextBlock Text="• Quản lý Bản sao sách"/>
+                                </Button>
+                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowDanhMucCommand}">
+                                    <TextBlock Text="• Thể loại, NXB, Tác giả"/>
+                                </Button>
+                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowPhieuNhapCommand}">
+                                    <TextBlock Text="• Lập phiếu nhập kho"/>
+                                </Button>
+                            </StackPanel>
+                        </Expander>
+
+                        <Expander Header="Độc Giả &amp; Nhân Sự" IsExpanded="True" Style="{StaticResource SidebarExpanderStyle}">
+                            <StackPanel Margin="8,8,0,0">
                                 <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowDocGiaCommand}">
-                                    <TextBlock Text="• Quản lý Độc giả"/>
+                                    <TextBlock Text="• Quản lý Thẻ Độc giả"/>
                                 </Button>
                                 <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowNhanVienCommand}">
-                                    <TextBlock Text="• Quản lý Nhân viên"/>
+                                    <TextBlock Text="• Quản lý Nhân viên (Admin)"/>
                                 </Button>
                             </StackPanel>
                         </Expander>
 
-                        <Expander Header="Nghiệp vụ Mượn/Trả" IsExpanded="True" Style="{StaticResource SidebarExpanderStyle}">
+                        <Expander Header="Nghiệp vụ Mượn / Trả" IsExpanded="True" Style="{StaticResource SidebarExpanderStyle}">
                             <StackPanel Margin="8,8,0,0">
                                 <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowPhieuMuonCommand}">
-                                    <TextBlock Text="• Lập phiếu mượn"/>
+                                    <TextBlock Text="• Lập phiếu mượn sách"/>
                                 </Button>
                                 <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowTraSachCommand}">
-                                    <TextBlock Text="• Trả sách &amp; Phạt"/>
+                                    <TextBlock Text="• Trả sách &amp; Xử lý trễ hạn"/>
+                                </Button>
+                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowPhieuPhatCommand}">
+                                    <TextBlock Text="• Quản lý Phiếu phạt"/>
                                 </Button>
                             </StackPanel>
                         </Expander>
 
-                        <Expander Header="Hệ thống &amp; Thống kê" IsExpanded="False" Style="{StaticResource SidebarExpanderStyle}">
+                        <Expander Header="Báo cáo &amp; Thống kê" IsExpanded="True" Style="{StaticResource SidebarExpanderStyle}">
                             <StackPanel Margin="8,8,0,0">
                                 <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowThongKeCommand}">
-                                    <TextBlock Text="• Báo cáo Thống kê"/>
-                                </Button>
-                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowProfileCommand}">
-                                    <TextBlock Text="• Tài khoản cá nhân"/>
-                                </Button>
-                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowSettingsCommand}">
-                                    <TextBlock Text="• Cài đặt &amp; Sao lưu"/>
+                                    <TextBlock Text="• Thống kê tổng quan"/>
                                 </Button>
                             </StackPanel>
                         </Expander>
                     </StackPanel>
                 </ScrollViewer>
 
-                <Button Grid.Row="3" Style="{StaticResource DangerButtonStyle}" Command="{Binding LogoutCommand}">
-                    <TextBlock Text="Đăng xuất"/>
+                <Button Grid.Row="3" Style="{StaticResource DangerButtonStyle}" Command="{Binding LogoutCommand}" Margin="0,10,0,0">
+                    <TextBlock Text="Đăng xuất khỏi hệ thống" FontWeight="Bold"/>
                 </Button>
             </Grid>
         </Border>
 
-        <!-- NƠI HIỂN THỊ CÁC USER CONTROL -->
         <ContentControl Grid.Column="1" Content="{Binding CurrentView}" Margin="16"/>
     </Grid>
 </Window>

@@ -1,0 +1,141 @@
+﻿<UserControl x:Class="QuanLyThuVien.Views.UCPhieuPhatView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QuanLyThuVien.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="750" d:DesignWidth="1150">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="380"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Margin="0,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="QUẢN LÝ PHIẾU PHẠT" Style="{StaticResource TitleTextStyle}" Margin="0,0,0,20"/>
+
+            <Border Grid.Row="1" Style="{StaticResource CardStyle}" Padding="16,16,16,4" Margin="0,0,0,20">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Margin="0,0,16,0">
+                        <TextBlock Text="Tìm kiếm (Mã Phạt, Mã Phiếu Mượn, Mã Bản Sao)" Style="{StaticResource LabelTextStyle}"/>
+                        <TextBox Text="{Binding SearchKeyword, UpdateSourceTrigger=PropertyChanged}" 
+                                 Style="{StaticResource AppTextBoxStyle}"/>
+                    </StackPanel>
+
+                    <Button Grid.Column="1" Content="TÌM KIẾM" 
+                            Command="{Binding SearchCommand}" 
+                            Style="{StaticResource PrimaryButtonStyle}" 
+                            Margin="0,2,0,12" Width="100"/>
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="2" Style="{StaticResource CardStyle}" Padding="0">
+                <DataGrid ItemsSource="{Binding ListPhieuPhat}" 
+                          SelectedItem="{Binding SelectedPhieuPhat}"
+                          Style="{StaticResource AppDataGridStyle}" Margin="1">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Mã Phạt" Binding="{Binding MaPhieuPhat}" Width="80"/>
+                        <DataGridTextColumn Header="Mã Phiếu" Binding="{Binding MaPhieu}" Width="90"/>
+                        <DataGridTextColumn Header="Mã Bản Sao" Binding="{Binding MaBS}" Width="100"/>
+                        <DataGridTextColumn Header="Số Tiền Phạt (VNĐ)" Binding="{Binding SoTienPhat, StringFormat=\{0:N0\}}" Width="150">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Right"/>
+                                    <Setter Property="Margin" Value="0,0,10,0"/>
+                                    <Setter Property="Foreground" Value="{DynamicResource Brush.Danger}"/>
+                                    <Setter Property="FontWeight" Value="SemiBold"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Lý Do" Binding="{Binding LyDo}" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+        </Grid>
+
+        <Border Grid.Column="1" Style="{StaticResource CardStyle}" VerticalAlignment="Bottom">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="0,0,8,0" Margin="0,0,-8,0">
+                <StackPanel>
+                    <TextBlock Text="CHI TIẾT PHIẾU PHẠT" Style="{StaticResource SectionTitleTextStyle}" Margin="0,0,0,24"/>
+
+                    <TextBlock Text="Mã phiếu phạt (Hệ thống tự tạo)" Style="{StaticResource LabelTextStyle}"/>
+                    <TextBox Text="{Binding MaPhieuPhat}" 
+                             Style="{StaticResource AppTextBoxStyle}" IsEnabled="False" 
+                             Background="{DynamicResource Brush.PrimaryLight}"/>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0" Margin="0,0,8,0">
+                            <TextBlock Text="Mã Phiếu Mượn" Style="{StaticResource LabelTextStyle}"/>
+                            <TextBox Text="{Binding MaPhieu, UpdateSourceTrigger=PropertyChanged}" 
+                                     Style="{StaticResource AppTextBoxStyle}" IsEnabled="{Binding IsEditingMode}"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1">
+                            <TextBlock Text="Mã Bản Sao Sách" Style="{StaticResource LabelTextStyle}"/>
+                            <TextBox Text="{Binding MaBS, UpdateSourceTrigger=PropertyChanged}" 
+                                     Style="{StaticResource AppTextBoxStyle}" IsEnabled="{Binding IsEditingMode}"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <TextBlock Text="Số tiền phạt (VNĐ)" Style="{StaticResource LabelTextStyle}"/>
+                    <TextBox Text="{Binding SoTienPhat, UpdateSourceTrigger=PropertyChanged}" 
+                             Style="{StaticResource AppTextBoxStyle}" Foreground="{DynamicResource Brush.Danger}" FontWeight="Bold"/>
+
+                    <TextBlock Text="Lý do phạt" Style="{StaticResource LabelTextStyle}"/>
+                    <TextBox Text="{Binding LyDo, UpdateSourceTrigger=PropertyChanged}" 
+                             Style="{StaticResource AppTextBoxStyle}" Height="80" TextWrapping="Wrap" AcceptsReturn="True" VerticalContentAlignment="Top"/>
+
+                    <Separator Margin="0,16,0,24" Background="{DynamicResource Brush.BorderSoft}"/>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Button Grid.Row="0" Grid.Column="0" Content="THÊM MỚI" 
+                                Command="{Binding AddCommand}" 
+                                Style="{StaticResource PrimaryButtonStyle}"/>
+
+                        <Button Grid.Row="0" Grid.Column="1" Content="LƯU SỬA" 
+                                Command="{Binding UpdateCommand}" 
+                                Style="{StaticResource SuccessButtonStyle}" Margin="0"/>
+
+                        <Button Grid.Row="1" Grid.ColumnSpan="2" Content="XÓA PHIẾU PHẠT" 
+                                Command="{Binding DeleteCommand}" 
+                                Style="{StaticResource DangerButtonStyle}" Margin="0,12,0,0"/>
+                    </Grid>
+
+                    <TextBlock Text="{Binding StatusMessage}" 
+                               Style="{StaticResource CaptionTextStyle}" 
+                               Foreground="{DynamicResource Brush.PrimaryDark}" 
+                               FontWeight="SemiBold"
+                               TextWrapping="Wrap" 
+                               HorizontalAlignment="Center" 
+                               Margin="0,16,0,0"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

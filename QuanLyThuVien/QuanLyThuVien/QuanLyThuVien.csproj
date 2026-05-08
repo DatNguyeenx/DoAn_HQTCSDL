@@ -157,32 +157,62 @@
     <Compile Include="Services\AvatarDisplayService.cs" />
     <Compile Include="Services\SettingsStorageService.cs" />
     <Compile Include="Services\ThemeManager.cs" />
+    <Compile Include="ViewModels\BanSaoSachViewModel.cs" />
+    <Compile Include="ViewModels\DanhMucViewModel.cs" />
+    <Compile Include="ViewModels\DashboardViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\DocGiaViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\MuonSachViewModel.cs" />
+    <Compile Include="ViewModels\NhanVienViewModel.cs" />
+    <Compile Include="ViewModels\PhieuNhapViewModel.cs" />
+    <Compile Include="ViewModels\PhieuPhatViewModel.cs" />
     <Compile Include="ViewModels\SachViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\RelayCommand.cs" />
+    <Compile Include="ViewModels\ThongKeViewModel.cs" />
+    <Compile Include="ViewModels\TraSachViewModel.cs" />
     <Compile Include="Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\UCBanSaoSachView.xaml.cs">
+      <DependentUpon>UCBanSaoSachView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UCDanhMucView.xaml.cs">
+      <DependentUpon>UCDanhMucView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UCDashboardView.xaml.cs">
       <DependentUpon>UCDashboardView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\UCQuanLyDocGia.xaml.cs">
-      <DependentUpon>UCQuanLyDocGia.xaml</DependentUpon>
+    <Compile Include="Views\UCDocGiaView.xaml.cs">
+      <DependentUpon>UCDocGiaView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\UCQuanLyNhanVien.xaml.cs">
-      <DependentUpon>UCQuanLyNhanVien.xaml</DependentUpon>
+    <Compile Include="Views\UCMuonSachView.xaml.cs">
+      <DependentUpon>UCMuonSachView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\UCQuanLySach.xaml.cs">
-      <DependentUpon>UCQuanLySach.xaml</DependentUpon>
+    <Compile Include="Views\UCNhanVienView.xaml.cs">
+      <DependentUpon>UCNhanVienView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UCPhieuNhapView.xaml.cs">
+      <DependentUpon>UCPhieuNhapView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UCPhieuPhatView.xaml.cs">
+      <DependentUpon>UCPhieuPhatView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UCSachView.xaml.cs">
+      <DependentUpon>UCSachView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UCSetting.xaml.cs">
       <DependentUpon>UCSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UCThongKeView.xaml.cs">
+      <DependentUpon>UCThongKeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UCTraSachView.xaml.cs">
+      <DependentUpon>UCTraSachView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -208,23 +238,51 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\UCBanSaoSachView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UCDanhMucView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UCDashboardView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\UCQuanLyDocGia.xaml">
+    <Page Include="Views\UCDocGiaView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\UCQuanLyNhanVien.xaml">
+    <Page Include="Views\UCMuonSachView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\UCQuanLySach.xaml">
+    <Page Include="Views\UCNhanVienView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UCPhieuNhapView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UCPhieuPhatView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UCSachView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UCSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UCThongKeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UCTraSachView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

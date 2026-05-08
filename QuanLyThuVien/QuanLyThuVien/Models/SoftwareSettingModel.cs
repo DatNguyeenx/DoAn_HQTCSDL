@@ -40,7 +40,7 @@ namespace QuanLyThuVien.Models
         {
             return new SoftwareSettingsModel
             {
-                StoreDisplayName = "CoffeeTea",
+                StoreDisplayName = "Thư viện",
                 StoreAddress = "Chi nhánh mặc định - vui lòng cập nhật địa chỉ thực tế.",
                 Hotline = "0901 000 001",
                 OpenTime = "06:30",

@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\nhom13_doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\viewmodels\\sachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\sachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\nhom13_doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -102,7 +106,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DocGiaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\DocGiaViewModel.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\DocGiaViewModel.cs",
@@ -115,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BaseViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\BaseViewModel.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\BaseViewModel.cs",
@@ -128,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Model1.Context.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\Model1.Context.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Models\\Model1.Context.cs",
@@ -141,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Model1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\Model1.Designer.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Models\\Model1.Designer.cs",
@@ -154,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\LoginViewModel.cs",
@@ -171,16 +175,16 @@
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\MainViewModel.cs*",
-              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\MainViewModel.cs*",
-              "ViewState": "AgIAADYAAAAAAAAAAAAuwDoAAAAwAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAuwEYAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-06T04:01:44.769Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UCQuanLyDocGia.xaml",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCQuanLyDocGia.xaml",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCQuanLyDocGia.xaml",
@@ -192,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "UCQuanLySach.xaml",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCQuanLySach.xaml",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCQuanLySach.xaml",
@@ -204,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "UCSetting.xaml",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCSetting.xaml",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCSetting.xaml",
@@ -216,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UCQuanLyNhanVien.xaml",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCQuanLyNhanVien.xaml",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCQuanLyNhanVien.xaml",
@@ -228,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AppStyles.xaml",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Resources\\AppStyles.xaml",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Resources\\AppStyles.xaml",
@@ -240,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MainView.xaml",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\MainView.xaml",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\MainView.xaml",
@@ -252,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "UCDashboardView.xaml",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCDashboardView.xaml",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCDashboardView.xaml",
@@ -264,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "LoginView.xaml",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\LoginView.xaml",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\LoginView.xaml",
@@ -276,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "LoginView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\LoginView.xaml.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\LoginView.xaml.cs",
@@ -288,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "MainView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\MainView.xaml.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\MainView.xaml.cs",
@@ -300,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "UCQuanLySach.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCQuanLySach.xaml.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCQuanLySach.xaml.cs",
@@ -312,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ThemeManager.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Services\\ThemeManager.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Services\\ThemeManager.cs",
@@ -324,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "AvatarDisplayService.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Services\\AvatarDisplayService.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Services\\AvatarDisplayService.cs",
@@ -336,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "SettingsStorageService.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Services\\SettingsStorageService.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Services\\SettingsStorageService.cs",
@@ -348,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "SoftwareSettingModel.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\SoftwareSettingModel.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Models\\SoftwareSettingModel.cs",
@@ -360,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\App.xaml",
               "RelativeDocumentMoniker": "QuanLyThuVien\\App.xaml",
@@ -374,8 +378,21 @@
         },
         {
           "DockedHeight": 334,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SachViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\SachViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\SachViewModel.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\Nhom13_DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\SachViewModel.cs",
+              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\SachViewModel.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAA+wD4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T03:43:13.868Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"

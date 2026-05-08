@@ -1,0 +1,131 @@
+﻿<UserControl x:Class="QuanLyThuVien.Views.UCTraSachView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QuanLyThuVien.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="750" d:DesignWidth="1150">
+    <!--<Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Margin="0,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="NGHIỆP VỤ TRẢ SÁCH" Style="{StaticResource TitleTextStyle}" Margin="0,0,0,20"/>
+
+            <Border Grid.Row="1" Style="{StaticResource CardStyle}" Padding="16,16,16,4" Margin="0,0,0,20">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Margin="0,0,16,0">
+                        <TextBlock Text="Tìm kiếm sách đang mượn (Mã Phiếu, Mã Độc Giả, Mã Bản Sao)" Style="{StaticResource LabelTextStyle}"/>
+                        <TextBox Text="{Binding SearchKeyword, UpdateSourceTrigger=PropertyChanged}" 
+                                 Style="{StaticResource AppTextBoxStyle}"/>
+                    </StackPanel>
+
+                    <Button Grid.Column="1" Content="TÌM KIẾM" 
+                            Command="{Binding SearchCommand}" 
+                            Style="{StaticResource BaseButtonStyle}" 
+                            Margin="0,2,0,12" Width="100"/>
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="2" Style="{StaticResource CardStyle}" Padding="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Border Background="{DynamicResource Brush.PrimaryLight}" Padding="12" CornerRadius="16,16,0,0">
+                        <TextBlock Text="DANH SÁCH SÁCH CHỜ TRẢ" FontWeight="Bold" Foreground="{DynamicResource Brush.PrimaryDark}"/>
+                    </Border>
+
+                    <DataGrid Grid.Row="1" ItemsSource="{Binding ListDangMuon}" 
+                              SelectedItem="{Binding SelectedPhieu}"
+                              Style="{StaticResource AppDataGridStyle}" Margin="1">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Mã Phiếu" Binding="{Binding MaPhieu}" Width="80"/>
+                            <DataGridTextColumn Header="Mã BS" Binding="{Binding MaBS}" Width="80"/>
+                            <DataGridTextColumn Header="Tên Độc Giả" Binding="{Binding TenDocGia}" Width="140"/>
+                            <DataGridTextColumn Header="Tên Sách" Binding="{Binding TenSach}" Width="*"/>
+                            <DataGridTextColumn Header="Hạn Trả" Binding="{Binding HanTra, StringFormat=\{0:dd/MM/yyyy\}}" Width="100"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Border Grid.Column="1" Style="{StaticResource CardStyle}" VerticalAlignment="Bottom">
+            <StackPanel>
+                <TextBlock Text="THỰC HIỆN TRẢ SÁCH" Style="{StaticResource SectionTitleTextStyle}" Margin="0,0,0,24"/>
+
+                <Border Background="{DynamicResource Brush.PrimaryLight}" CornerRadius="{StaticResource Radius.Small}" Padding="16" Margin="0,0,0,20">
+                    <StackPanel>
+                        <TextBlock Text="Sách đã chọn:" Style="{StaticResource CaptionTextStyle}"/>
+                        <TextBlock Text="{Binding SelectedPhieu.TenSach, FallbackValue='Chưa chọn sách'}" 
+                                   FontSize="16" FontWeight="Bold" Foreground="{DynamicResource Brush.PrimaryDark}" TextWrapping="Wrap" Margin="0,4,0,8"/>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Hạn trả: " Style="{StaticResource CaptionTextStyle}"/>
+                            <TextBlock Grid.Column="1" Text="{Binding SelectedPhieu.HanTra, StringFormat=\{0:dd/MM/yyyy\}}" FontWeight="SemiBold"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+                <TextBlock Text="Ngày trả thực tế" Style="{StaticResource LabelTextStyle}"/>
+                <DatePicker SelectedDate="{Binding NgayTraThucTe, UpdateSourceTrigger=PropertyChanged}" 
+                            Style="{StaticResource AppDatePickerStyle}"/>
+
+                <Border Background="{DynamicResource Brush.DangerSoft}" CornerRadius="{StaticResource Radius.Small}" Padding="16" Margin="0,10,0,24">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Tiền phạt dự kiến:" Style="{StaticResource CaptionTextStyle}" Foreground="{DynamicResource Brush.Danger}"/>
+                            <TextBlock Text="{Binding TienPhatDuKien, StringFormat=\{0:N0\} VNĐ}" FontSize="20" FontWeight="Bold" Foreground="{DynamicResource Brush.Danger}"/>
+                        </StackPanel>
+                        <TextBlock Grid.Column="1" Text="⚠️" FontSize="30" VerticalAlignment="Center" 
+                                   Visibility="{Binding IsLate, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                    </Grid>
+                </Border>
+
+                <Button Content="XÁC NHẬN TRẢ SÁCH" 
+                        Command="{Binding TraSachCommand}" 
+                        Style="{StaticResource SuccessButtonStyle}" 
+                        Height="50" FontSize="16"/>
+
+                <Button Content="HỦY CHỌN" 
+                        Command="{Binding ClearSelectionCommand}" 
+                        Style="{StaticResource BaseButtonStyle}" 
+                        Margin="0,12,0,0"/>
+
+                <Border Margin="0,20,0,0" Padding="12" CornerRadius="{StaticResource Radius.Small}" 
+                        Background="{DynamicResource Brush.Info}"
+                        Visibility="{Binding HasMessage, Converter={StaticResource BooleanToVisibilityConverter}}">
+                    <TextBlock Text="{Binding StatusMessage}" 
+                               Style="{StaticResource BodyTextStyle}" 
+                               Foreground="{DynamicResource Brush.PrimaryDark}" 
+                               FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Border>
+            </StackPanel>
+        </Border>
+    </Grid>-->
+</UserControl>

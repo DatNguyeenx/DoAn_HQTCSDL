@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyThuVien.ViewModels
 {
-    class BaseViewModel : INotifyPropertyChanged // Dùng thư viện System.CompnentModel
+    public class BaseViewModel : INotifyPropertyChanged // Dùng thư viện System.CompnentModel
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)

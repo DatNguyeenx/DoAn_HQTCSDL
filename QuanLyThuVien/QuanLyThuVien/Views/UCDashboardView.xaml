@@ -18,7 +18,7 @@
         <!-- Header -->
         <Border Grid.Row="0" Style="{StaticResource HighlightCardStyle}">
             <StackPanel>
-                <TextBlock Text="Xin chào, thủ thư!" Style="{StaticResource TitleTextStyle}"/>
+                <TextBlock Text="Xin chào!" Style="{StaticResource TitleTextStyle}"/>
                 <TextBlock Text="Hệ thống quản lý thư viện hiện đại, trực quan và dễ sử dụng." Style="{StaticResource BodyTextStyle}" Margin="0,8,0,0"/>
             </StackPanel>
         </Border>

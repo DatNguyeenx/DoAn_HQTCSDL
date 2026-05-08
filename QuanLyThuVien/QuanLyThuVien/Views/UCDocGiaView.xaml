@@ -1,0 +1,160 @@
+﻿<UserControl x:Class="QuanLyThuVien.Views.UCDocGiaView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QuanLyThuVien.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="750" d:DesignWidth="1150">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="380"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Margin="0,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="QUẢN LÝ ĐỘC GIẢ" Style="{StaticResource TitleTextStyle}" Margin="0,0,0,20"/>
+
+            <Border Grid.Row="1" Style="{StaticResource CardStyle}" Padding="16,16,16,4" Margin="0,0,0,20">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Margin="0,0,16,0">
+                        <TextBlock Text="Tìm kiếm (Mã ĐG, Tên, SĐT)" Style="{StaticResource LabelTextStyle}"/>
+                        <TextBox Text="{Binding SearchKeyword, UpdateSourceTrigger=PropertyChanged}" 
+                                 Style="{StaticResource AppTextBoxStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" Margin="0,0,16,0">
+                        <TextBlock Text="Trạng thái thẻ" Style="{StaticResource LabelTextStyle}"/>
+                        <ComboBox SelectedItem="{Binding FilterTrangThai}" Style="{StaticResource AppComboBoxStyle}">
+                            <ComboBoxItem Content="Tất cả" IsSelected="True"/>
+                            <ComboBoxItem Content="Bình thường"/>
+                            <ComboBoxItem Content="Hết hạn"/>
+                            <ComboBoxItem Content="Bị khóa"/>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <Button Grid.Column="2" Content="TÌM KIẾM" 
+                            Command="{Binding SearchCommand}" 
+                            Style="{StaticResource PrimaryButtonStyle}" 
+                            Margin="0,2,0,12" Width="100"/>
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="2" Style="{StaticResource CardStyle}" Padding="0">
+                <DataGrid ItemsSource="{Binding ListDocGia}" 
+                          SelectedItem="{Binding SelectedDocGia}"
+                          Style="{StaticResource AppDataGridStyle}" Margin="1">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Mã ĐG" Binding="{Binding MaDG}" Width="80"/>
+                        <DataGridTextColumn Header="Họ và Tên" Binding="{Binding HoTen}" Width="*"/>
+                        <DataGridTextColumn Header="Ngày Sinh" Binding="{Binding NgaySinh, StringFormat=\{0:dd/MM/yyyy\}}" Width="100"/>
+                        <DataGridTextColumn Header="Số ĐT" Binding="{Binding SoDT}" Width="120"/>
+                        <DataGridTextColumn Header="Ngày Hết Hạn" Binding="{Binding NgayHetHan, StringFormat=\{0:dd/MM/yyyy\}}" Width="120"/>
+                        <DataGridTextColumn Header="Trạng Thái" Binding="{Binding TrangThaiThe}" Width="120"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+        </Grid>
+
+        <Border Grid.Column="1" Style="{StaticResource CardStyle}" VerticalAlignment="Bottom">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="0,0,8,0" Margin="0,0,-8,0">
+                <StackPanel>
+                    <TextBlock Text="THÔNG TIN ĐỘC GIẢ" Style="{StaticResource SectionTitleTextStyle}" Margin="0,0,0,24"/>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Margin="0,0,8,0">
+                            <TextBlock Text="Mã độc giả" Style="{StaticResource LabelTextStyle}"/>
+                            <TextBox Text="{Binding MaDG, UpdateSourceTrigger=PropertyChanged}" 
+                                     Style="{StaticResource AppTextBoxStyle}" IsEnabled="{Binding IsEditingMode}"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock Text="Ngày sinh" Style="{StaticResource LabelTextStyle}"/>
+                            <DatePicker SelectedDate="{Binding NgaySinh, UpdateSourceTrigger=PropertyChanged}" 
+                                        Style="{StaticResource AppDatePickerStyle}"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <TextBlock Text="Họ và tên" Style="{StaticResource LabelTextStyle}"/>
+                    <TextBox Text="{Binding HoTen, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource AppTextBoxStyle}"/>
+
+                    <TextBlock Text="Số điện thoại" Style="{StaticResource LabelTextStyle}"/>
+                    <TextBox Text="{Binding SoDT, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource AppTextBoxStyle}"/>
+
+                    <TextBlock Text="Địa chỉ" Style="{StaticResource LabelTextStyle}"/>
+                    <TextBox Text="{Binding DiaChi, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource AppTextBoxStyle}"/>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Margin="0,0,8,0">
+                            <TextBlock Text="Ngày lập thẻ" Style="{StaticResource LabelTextStyle}"/>
+                            <DatePicker SelectedDate="{Binding NgayLapThe, UpdateSourceTrigger=PropertyChanged}" 
+                                        Style="{StaticResource AppDatePickerStyle}"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock Text="Ngày hết hạn" Style="{StaticResource LabelTextStyle}"/>
+                            <DatePicker SelectedDate="{Binding NgayHetHan, UpdateSourceTrigger=PropertyChanged}" 
+                                        Style="{StaticResource AppDatePickerStyle}"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <TextBlock Text="Trạng thái thẻ" Style="{StaticResource LabelTextStyle}"/>
+                    <ComboBox SelectedValue="{Binding TrangThaiThe}" 
+                              SelectedValuePath="Content"
+                              Style="{StaticResource AppComboBoxStyle}">
+                        <ComboBoxItem Content="Bình thường"/>
+                        <ComboBoxItem Content="Hết hạn"/>
+                        <ComboBoxItem Content="Bị khóa"/>
+                    </ComboBox>
+
+                    <Separator Margin="0,16,0,24" Background="{DynamicResource Brush.BorderSoft}"/>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Button Grid.Row="0" Grid.Column="0" Content="✚ THÊM MỚI" Command="{Binding AddCommand}" Style="{StaticResource PrimaryButtonStyle}" Margin="0 0 10 0"/>
+
+                        <Button Grid.Row="0" Grid.Column="1" Content="✎ SỬA" Command="{Binding UpdateCommand}" Style="{StaticResource SuccessButtonStyle}" Margin="0 0 10 0"/>
+
+                        <Button Grid.Row="1" Grid.Column="0" Content="✖ XÓA" Command="{Binding DeleteCommand}" Style="{StaticResource DangerButtonStyle}" Margin="0 10 10 0" />
+
+                        <Button Grid.Row="1" Grid.Column="1" Content="↻ LÀM MỚI" Command="{Binding ClearCommand}" Style="{StaticResource BaseButtonStyle}" Margin="0 10 10 0"/>
+                    </Grid>
+
+                    <TextBlock Text="{Binding StatusMessage}" 
+                               Style="{StaticResource CaptionTextStyle}" 
+                               Foreground="{DynamicResource Brush.PrimaryDark}" 
+                               FontWeight="SemiBold"
+                               TextWrapping="Wrap" 
+                               HorizontalAlignment="Center" 
+                               Margin="0,16,0,0"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

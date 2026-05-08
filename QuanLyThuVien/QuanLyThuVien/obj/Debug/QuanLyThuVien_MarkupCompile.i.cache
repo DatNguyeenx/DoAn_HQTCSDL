@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Nguyen Tien Dat\OneDrive\Desktop\Nhom13_DoAn_HQTCSDL\QuanLyThuVien\QuanLyThuVien\obj\Debug\
+C:\Users\Nguyen Tien Dat\OneDrive\Desktop\DoAn_HQTCSDL\QuanLyThuVien\QuanLyThuVien\obj\Debug\
 QuanLyThuVien
 none
 false
 DEBUG;TRACE
-C:\Users\Nguyen Tien Dat\OneDrive\Desktop\Nhom13_DoAn_HQTCSDL\QuanLyThuVien\QuanLyThuVien\App.xaml
-9-693975789
+C:\Users\Nguyen Tien Dat\OneDrive\Desktop\DoAn_HQTCSDL\QuanLyThuVien\QuanLyThuVien\App.xaml
+16-202761840
 2-1223955081
-401045927009
-29-33013786
-MainWindow.xaml;Resources\AppStyles.xaml;Views\LoginView.xaml;Views\MainView.xaml;Views\UCDashboardView.xaml;Views\UCQuanLyDocGia.xaml;Views\UCQuanLyNhanVien.xaml;Views\UCQuanLySach.xaml;Views\UCSetting.xaml;
+561840612689
+29-783746448
+MainWindow.xaml;Resources\AppStyles.xaml;Views\LoginView.xaml;Views\MainView.xaml;Views\UCBanSaoSachView.xaml;Views\UCDanhMucView.xaml;Views\UCDashboardView.xaml;Views\UCDocGiaView.xaml;Views\UCMuonSachView.xaml;Views\UCNhanVienView.xaml;Views\UCPhieuNhapView.xaml;Views\UCPhieuPhatView.xaml;Views\UCSachView.xaml;Views\UCSetting.xaml;Views\UCThongKeView.xaml;Views\UCTraSachView.xaml;
 
-False
+True
 
