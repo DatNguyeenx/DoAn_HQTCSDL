@@ -138,16 +138,18 @@ namespace QuanLyThuVien.ViewModels
         public ICommand AddCommand { get; set; }
         public ICommand UpdateCommand { get; set; }
         public ICommand DeleteCommand { get; set; }
+        public ICommand ClearCommand { get; set; }
 
         public DocGiaViewModel()
         {
             IsEditingMode = true;
             LoadData();
-
+            
             SearchCommand = new RelayCommand(ExecuteSearch, CanExecuteAlways);
             AddCommand = new RelayCommand(ExecuteAdd, CanExecuteAlways);
             UpdateCommand = new RelayCommand(ExecuteUpdate, CanExecuteAlways);
             DeleteCommand = new RelayCommand(ExecuteDelete, CanExecuteAlways);
+            ClearCommand = new RelayCommand(ExecuteClear, CanExecuteAlways);
         }
 
         private bool CanExecuteAlways(object parameter)
@@ -331,5 +333,13 @@ namespace QuanLyThuVien.ViewModels
             _selectedDocGia = null;
             OnPropertyChanged(nameof(SelectedDocGia));
         }
+        private void ExecuteClear(object parameter)
+        {
+            ClearForm();
+            StatusMessage = string.Empty;
+            SearchKeyword = string.Empty;
+            LoadData();
+        }
+
     }
 }

@@ -189,14 +189,16 @@ namespace QuanLyThuVien.ViewModels
         public ICommand AddLoaiCommand { get; set; }
         public ICommand UpdateLoaiCommand { get; set; }
         public ICommand DeleteLoaiCommand { get; set; }
+        public ICommand ClearLoaiCommand { get; set; }
 
         public ICommand AddNXBCommand { get; set; }
         public ICommand UpdateNXBCommand { get; set; }
         public ICommand DeleteNXBCommand { get; set; }
-
+        public ICommand ClearNXBCommand { get; set; }
         public ICommand AddTacGiaCommand { get; set; }
         public ICommand UpdateTacGiaCommand { get; set; }
         public ICommand DeleteTacGiaCommand { get; set; }
+        public ICommand ClearTacGiaCommand { get; set; }
 
         public DanhMucViewModel()
         {
@@ -209,14 +211,17 @@ namespace QuanLyThuVien.ViewModels
             AddLoaiCommand = new RelayCommand(ExecuteAddLoai, CanExecuteAlways);
             UpdateLoaiCommand = new RelayCommand(ExecuteUpdateLoai, CanExecuteAlways);
             DeleteLoaiCommand = new RelayCommand(ExecuteDeleteLoai, CanExecuteAlways);
+            ClearLoaiCommand = new RelayCommand(ExecuteClearLoai,CanExecuteAlways);
 
             AddNXBCommand = new RelayCommand(ExecuteAddNXB, CanExecuteAlways);
             UpdateNXBCommand = new RelayCommand(ExecuteUpdateNXB, CanExecuteAlways);
             DeleteNXBCommand = new RelayCommand(ExecuteDeleteNXB, CanExecuteAlways);
+            ClearNXBCommand = new RelayCommand(ExecuteClearNXB, CanExecuteAlways);
 
             AddTacGiaCommand = new RelayCommand(ExecuteAddTacGia, CanExecuteAlways);
             UpdateTacGiaCommand = new RelayCommand(ExecuteUpdateTacGia, CanExecuteAlways);
             DeleteTacGiaCommand = new RelayCommand(ExecuteDeleteTacGia, CanExecuteAlways);
+            ClearTacGiaCommand = new RelayCommand(ExecuteClearTacGia, CanExecuteAlways);
         }
 
         private bool CanExecuteAlways(object parameter)
@@ -468,6 +473,46 @@ namespace QuanLyThuVien.ViewModels
                 {
                     MessageBox.Show("Không thể xóa dữ liệu đang được sử dụng!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
+            }
+        }
+        private void ExecuteClearLoai(object parameter)
+        {
+            MaLoai = string.Empty;
+            TenLoai = string.Empty;
+            IsEditingLoaiMode = true;
+            _selectedLoaiSach = null;
+            OnPropertyChanged(nameof(SelectedLoaiSach));
+            using (var context = new QuanLyThuVienEntities())
+            {
+                ListLoaiSach = new ObservableCollection<LoaiSach>(context.LoaiSaches.ToList());
+            }
+        }
+
+        private void ExecuteClearNXB(object parameter)
+        {
+            MaNXB = string.Empty;
+            TenNXB = string.Empty;
+            DiaChiNXB = string.Empty;
+            SoDTNXB = string.Empty;
+            IsEditingNXBMode = true;
+            _selectedNXB = null;
+            OnPropertyChanged(nameof(SelectedNXB));
+            using (var context = new QuanLyThuVienEntities())
+            {
+                ListNXB = new ObservableCollection<NhaXuatBan>(context.NhaXuatBans.ToList());
+            }
+        }
+
+        private void ExecuteClearTacGia(object parameter)
+        {
+            MaTG = string.Empty;
+            TenTG = string.Empty;
+            IsEditingTacGiaMode = true;
+            _selectedTacGia = null;
+            OnPropertyChanged(nameof(SelectedTacGia));
+            using (var context = new QuanLyThuVienEntities())
+            {
+                ListTacGia = new ObservableCollection<TacGia>(context.TacGias.ToList());
             }
         }
     }

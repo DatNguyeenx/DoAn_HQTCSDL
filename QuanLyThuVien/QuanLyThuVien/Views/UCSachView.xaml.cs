@@ -23,6 +23,7 @@ namespace QuanLyThuVien.Views
         public UCSachView()
         {
             InitializeComponent();
+            this.DataContext = new ViewModels.SachViewModel();
         }
     }
 }

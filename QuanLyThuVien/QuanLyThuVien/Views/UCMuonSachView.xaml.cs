@@ -23,6 +23,7 @@ namespace QuanLyThuVien.Views
         public UCMuonSachView()
         {
             InitializeComponent();
+            this.DataContext = new ViewModels.MuonSachViewModel();
         }
     }
 }

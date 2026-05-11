@@ -48,7 +48,7 @@
                     <Button Grid.Column="2" Content="TÌM KIẾM" 
                             Command="{Binding SearchCommand}" 
                             Style="{StaticResource PrimaryButtonStyle}" 
-                            Margin="0,2,0,12" Width="100"/>
+                            Margin="0,10,0,0" Width="100"/>
                 </Grid>
             </Border>
 
@@ -56,6 +56,22 @@
                 <DataGrid ItemsSource="{Binding ListDocGia}" 
                           SelectedItem="{Binding SelectedDocGia}"
                           Style="{StaticResource AppDataGridStyle}" Margin="1">
+                    <DataGrid.Resources>
+                        <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource {x:Type DataGridColumnHeader}}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                        <Grid Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGrid.Resources>
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Mã ĐG" Binding="{Binding MaDG}" Width="80"/>
                         <DataGridTextColumn Header="Họ và Tên" Binding="{Binding HoTen}" Width="*"/>

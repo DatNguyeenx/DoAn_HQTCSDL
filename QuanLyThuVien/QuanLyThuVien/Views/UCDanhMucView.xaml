@@ -56,6 +56,22 @@
 
                     <Border Grid.Column="0" Style="{StaticResource CardStyle}" Padding="0" Margin="0,0,20,0">
                         <DataGrid ItemsSource="{Binding ListLoaiSach}" SelectedItem="{Binding SelectedLoaiSach}" Style="{StaticResource AppDataGridStyle}" Margin="1">
+                            <DataGrid.Resources>
+                                <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource {x:Type DataGridColumnHeader}}">
+                                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                </Style>
+                                <Style TargetType="DataGridCell">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                                <Grid Background="{TemplateBinding Background}">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                </Grid>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </DataGrid.Resources>
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="Mã Thể Loại" Binding="{Binding MaLoai}" Width="150"/>
                                 <DataGridTextColumn Header="Tên Thể Loại" Binding="{Binding TenLoai}" Width="*"/>
@@ -85,13 +101,13 @@
                                     <RowDefinition Height="Auto"/>
                                 </Grid.RowDefinitions>
 
-                                <Button Grid.Row="0" Grid.Column="0" Content="✚ THÊM MỚI" Command="{Binding AddCommand}" Style="{StaticResource PrimaryButtonStyle}" Margin="0 0 10 0"/>
+                                <Button Grid.Row="0" Grid.Column="0" Content="✚ THÊM MỚI" Command="{Binding AddLoaiCommand}" Style="{StaticResource PrimaryButtonStyle}" Margin="0 0 10 0"/>
 
-                                <Button Grid.Row="0" Grid.Column="1" Content="✎ SỬA" Command="{Binding UpdateCommand}" Style="{StaticResource SuccessButtonStyle}" Margin="0 0 10 0"/>
+                                <Button Grid.Row="0" Grid.Column="1" Content="✎ SỬA" Command="{Binding UpdateLoaiCommand}" Style="{StaticResource SuccessButtonStyle}" Margin="0 0 10 0"/>
 
-                                <Button Grid.Row="1" Grid.Column="0" Content="✖ XÓA" Command="{Binding DeleteCommand}" Style="{StaticResource DangerButtonStyle}" Margin="0 10 10 0"/>
+                                <Button Grid.Row="1" Grid.Column="0" Content="✖ XÓA" Command="{Binding DeleteLoaiCommand}" Style="{StaticResource DangerButtonStyle}" Margin="0 10 10 0"/>
 
-                                <Button Grid.Row="1" Grid.Column="1" Content="↻ LÀM MỚI" Command="{Binding ClearCommand}" Style="{StaticResource BaseButtonStyle}" Margin="0 10 10 0"/>
+                                <Button Grid.Row="1" Grid.Column="1" Content="↻ LÀM MỚI" Command="{Binding ClearLoaiCommand}" Style="{StaticResource BaseButtonStyle}" Margin="0 10 10 0"/>
                             </Grid>
                         </StackPanel>
                     </Border>
@@ -107,6 +123,22 @@
 
                     <Border Grid.Column="0" Style="{StaticResource CardStyle}" Padding="0" Margin="0,0,20,0">
                         <DataGrid ItemsSource="{Binding ListNXB}" SelectedItem="{Binding SelectedNXB}" Style="{StaticResource AppDataGridStyle}" Margin="1">
+                            <DataGrid.Resources>
+                                <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource {x:Type DataGridColumnHeader}}">
+                                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                </Style>
+                                <Style TargetType="DataGridCell">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                                <Grid Background="{TemplateBinding Background}">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                </Grid>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </DataGrid.Resources>
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="Mã NXB" Binding="{Binding MaNXB}" Width="100"/>
                                 <DataGridTextColumn Header="Tên NXB" Binding="{Binding TenNXB}" Width="*"/>
@@ -144,13 +176,13 @@
                                     <RowDefinition Height="Auto"/>
                                 </Grid.RowDefinitions>
 
-                                <Button Grid.Row="0" Grid.Column="0" Content="✚ THÊM MỚI" Command="{Binding AddCommand}" Style="{StaticResource PrimaryButtonStyle}" Margin="0 0 10 0"/>
+                                <Button Grid.Row="0" Grid.Column="0" Content="✚ THÊM MỚI" Command="{Binding AddNXBCommand}" Style="{StaticResource PrimaryButtonStyle}" Margin="0 0 10 0"/>
 
-                                <Button Grid.Row="0" Grid.Column="1" Content="✎ SỬA" Command="{Binding UpdateCommand}" Style="{StaticResource SuccessButtonStyle}" Margin="0 0 10 0"/>
+                                <Button Grid.Row="0" Grid.Column="1" Content="✎ SỬA" Command="{Binding UpdateNXBCommand}" Style="{StaticResource SuccessButtonStyle}" Margin="0 0 10 0"/>
 
-                                <Button Grid.Row="1" Grid.Column="0" Content="✖ XÓA" Command="{Binding DeleteCommand}" Style="{StaticResource DangerButtonStyle}" Margin="0 10 10 0" />
+                                <Button Grid.Row="1" Grid.Column="0" Content="✖ XÓA" Command="{Binding DeleteNXBCommand}" Style="{StaticResource DangerButtonStyle}" Margin="0 10 10 0" />
 
-                                <Button Grid.Row="1" Grid.Column="1" Content="↻ LÀM MỚI" Command="{Binding ClearCommand}" Style="{StaticResource BaseButtonStyle}" Margin="0 10 10 0"/>
+                                <Button Grid.Row="1" Grid.Column="1" Content="↻ LÀM MỚI" Command="{Binding ClearNXBCommand}" Style="{StaticResource BaseButtonStyle}" Margin="0 10 10 0"/>
                             </Grid>
                         </StackPanel>
                     </Border>
@@ -166,6 +198,22 @@
 
                     <Border Grid.Column="0" Style="{StaticResource CardStyle}" Padding="0" Margin="0,0,20,0">
                         <DataGrid ItemsSource="{Binding ListTacGia}" SelectedItem="{Binding SelectedTacGia}" Style="{StaticResource AppDataGridStyle}" Margin="1">
+                            <DataGrid.Resources>
+                                <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource {x:Type DataGridColumnHeader}}">
+                                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                </Style>
+                                <Style TargetType="DataGridCell">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                                <Grid Background="{TemplateBinding Background}">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                </Grid>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </DataGrid.Resources>
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="Mã Tác Giả" Binding="{Binding MaTG}" Width="150"/>
                                 <DataGridTextColumn Header="Tên Tác Giả" Binding="{Binding TenTG}" Width="*"/>
@@ -195,13 +243,13 @@
                                     <RowDefinition Height="Auto"/>
                                 </Grid.RowDefinitions>
 
-                                <Button Grid.Row="0" Grid.Column="0" Content="✚ THÊM MỚI" Command="{Binding AddCommand}" Style="{StaticResource PrimaryButtonStyle}" Margin="0 0 10 0"/>
+                                <Button Grid.Row="0" Grid.Column="0" Content="✚ THÊM MỚI" Command="{Binding AddTacGiaCommand}" Style="{StaticResource PrimaryButtonStyle}" Margin="0 0 10 0"/>
 
-                                <Button Grid.Row="0" Grid.Column="1" Content="✎ SỬA" Command="{Binding UpdateCommand}" Style="{StaticResource SuccessButtonStyle}" Margin="0 0 10 0"/>
+                                <Button Grid.Row="0" Grid.Column="1" Content="✎ SỬA" Command="{Binding UpdateTacGiaCommand}" Style="{StaticResource SuccessButtonStyle}" Margin="0 0 10 0"/>
 
-                                <Button Grid.Row="1" Grid.Column="0" Content="✖ XÓA" Command="{Binding DeleteCommand}" Style="{StaticResource DangerButtonStyle}" Margin="0 10 10 0" />
+                                <Button Grid.Row="1" Grid.Column="0" Content="✖ XÓA" Command="{Binding DeleteTacGiaCommand}" Style="{StaticResource DangerButtonStyle}" Margin="0 10 10 0" />
 
-                                <Button Grid.Row="1" Grid.Column="1" Content="↻ LÀM MỚI" Command="{Binding ClearCommand}" Style="{StaticResource BaseButtonStyle}" Margin="0 10 10 0"/>
+                                <Button Grid.Row="1" Grid.Column="1" Content="↻ LÀM MỚI" Command="{Binding ClearTacGiaCommand}" Style="{StaticResource BaseButtonStyle}" Margin="0 10 10 0"/>
                             </Grid>
                         </StackPanel>
                     </Border>

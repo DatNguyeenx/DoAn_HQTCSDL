@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:QuanLyThuVien.Views"
              mc:Ignorable="d" 
              d:DesignHeight="750" d:DesignWidth="1150">
-    <!--<Grid Margin="10">
+    <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="400"/>
@@ -127,5 +127,5 @@
                 </Border>
             </StackPanel>
         </Border>
-    </Grid>-->
+    </Grid>
 </UserControl>

@@ -23,6 +23,7 @@ namespace QuanLyThuVien.Views
         public UCNhanVienView()
         {
             InitializeComponent();
+            this.DataContext = new ViewModels.NhanVienViewModel();
         }
     }
 }

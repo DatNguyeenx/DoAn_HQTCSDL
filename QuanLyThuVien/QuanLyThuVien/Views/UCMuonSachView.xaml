@@ -6,8 +6,8 @@
              xmlns:local="clr-namespace:QuanLyThuVien.Views"
              mc:Ignorable="d" 
              d:DesignHeight="750" d:DesignWidth="1150">
-    <!--<Grid Margin="10">
-        <Grid.ColumnDefinitions>
+    <Grid Margin="10">
+        <!--<Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="380"/>
         </Grid.ColumnDefinitions>
@@ -129,6 +129,6 @@
                     </Border>
                 </StackPanel>
             </ScrollViewer>
-        </Border>
-    </Grid>-->
+        </Border>-->
+    </Grid>
 </UserControl>

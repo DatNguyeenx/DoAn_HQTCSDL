@@ -36,8 +36,8 @@
 
                     <Button Grid.Column="1" Content="TÌM KIẾM" 
                             Command="{Binding SearchCommand}" 
-                            Style="{StaticResource BaseButtonStyle}" 
-                            Margin="0,2,0,12" Width="100"/>
+                            Style="{StaticResource PrimaryButtonStyle}" 
+                            Margin="0,10,0,0" Width="100"/>
                 </Grid>
             </Border>
 
@@ -45,6 +45,22 @@
                 <DataGrid ItemsSource="{Binding ListSach}" 
                           SelectedItem="{Binding SelectedSach}"
                           Style="{StaticResource AppDataGridStyle}" Margin="1">
+                    <DataGrid.Resources>
+                        <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource {x:Type DataGridColumnHeader}}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                        <Grid Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGrid.Resources>
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Mã Sách" Binding="{Binding MaSach}" Width="80"/>
                         <DataGridTextColumn Header="Tên Đầu Sách" Binding="{Binding TenSach}" Width="*"/>
@@ -86,8 +102,7 @@
 
                     <Separator Margin="0,16,0,24" Background="{DynamicResource Brush.BorderSoft}"/>
 
-                    <TextBlock Text="Lưu ý: Thể loại và Tác giả được quản lý trong mục Chi tiết." 
-                               Style="{StaticResource CaptionTextStyle}" FontStyle="Italic" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+                  
 
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -99,17 +114,13 @@
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
 
-                        <Button Grid.Row="0" Grid.Column="0" Content="THÊM MỚI" 
-                                Command="{Binding AddCommand}" 
-                                Style="{StaticResource PrimaryButtonStyle}"/>
+                        <Button Grid.Row="0" Grid.Column="0" Content="✚ THÊM MỚI" Command="{Binding AddCommand}" Style="{StaticResource PrimaryButtonStyle}" Margin="0 0 10 0"/>
 
-                        <Button Grid.Row="0" Grid.Column="1" Content="LƯU SỬA" 
-                                Command="{Binding UpdateCommand}" 
-                                Style="{StaticResource SuccessButtonStyle}" Margin="0"/>
+                        <Button Grid.Row="0" Grid.Column="1" Content="✎ SỬA" Command="{Binding UpdateCommand}" Style="{StaticResource SuccessButtonStyle}" Margin="0 0 10 0"/>
 
-                        <Button Grid.Row="1" Grid.ColumnSpan="2" Content="XÓA ĐẦU SÁCH" 
-                                Command="{Binding DeleteCommand}" 
-                                Style="{StaticResource DangerButtonStyle}" Margin="0,12,0,0"/>
+                        <Button Grid.Row="1" Grid.Column="0" Content="✖ XÓA" Command="{Binding DeleteCommand}" Style="{StaticResource DangerButtonStyle}" Margin="0 10 10 0"/>
+
+                        <Button Grid.Row="1" Grid.Column="1" Content="↻ LÀM MỚI" Command="{Binding ClearCommand}" Style="{StaticResource BaseButtonStyle}" Margin="0 10 10 0"/>
                     </Grid>
 
                     <TextBlock Text="{Binding StatusMessage}" 

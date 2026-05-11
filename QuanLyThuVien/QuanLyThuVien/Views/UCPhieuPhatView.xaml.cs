@@ -23,6 +23,7 @@ namespace QuanLyThuVien.Views
         public UCPhieuPhatView()
         {
             InitializeComponent();
+            
         }
     }
 }
