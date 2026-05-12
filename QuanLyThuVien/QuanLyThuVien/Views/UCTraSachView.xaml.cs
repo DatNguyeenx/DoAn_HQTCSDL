@@ -23,6 +23,7 @@ namespace QuanLyThuVien.Views
         public UCTraSachView()
         {
             InitializeComponent();
+            this.DataContext = new ViewModels.TraSachViewModel();
         }
     }
 }

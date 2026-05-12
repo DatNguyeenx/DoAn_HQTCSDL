@@ -59,6 +59,8 @@ namespace QuanLyThuVien.ViewModels
         public ICommand ShowTraSachCommand { get; set; }
         public ICommand ShowPhieuPhatCommand { get; set; }
         public ICommand ShowThongKeCommand { get; set; }
+        public ICommand ShowSettingCommand { get; set; }
+        public ICommand ShowProfileCommand { get; set; }
         public ICommand LogoutCommand { get; set; }
 
         public MainViewModel()
@@ -82,6 +84,8 @@ namespace QuanLyThuVien.ViewModels
             ShowTraSachCommand = new RelayCommand(ExecuteShowTraSach, CanExecuteAlways);
             ShowPhieuPhatCommand = new RelayCommand(ExecuteShowPhieuPhat, CanExecuteAlways);
             ShowThongKeCommand = new RelayCommand(ExecuteShowThongKe, CanExecuteAlways);
+            ShowSettingCommand = new RelayCommand(ExecuteShowSetting, CanExecuteAlways);
+            ShowProfileCommand = new RelayCommand(ExecuteShowProfile,CanExecuteAlways);
             LogoutCommand = new RelayCommand(ExecuteLogout, CanExecuteAlways);
         }
 
@@ -150,6 +154,14 @@ namespace QuanLyThuVien.ViewModels
         private void ExecuteShowThongKe(object parameter)
         {
             CurrentView = new UCThongKeView();
+        }
+        private void ExecuteShowSetting(object parameter)
+        {
+            CurrentView = new UCSetting();
+        }
+        private void ExecuteShowProfile(object parameter)
+        {
+            CurrentView = new UCProfile();
         }
 
         private void ExecuteLogout(object parameter)

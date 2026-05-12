@@ -101,6 +101,17 @@
                                 </Button>
                             </StackPanel>
                         </Expander>
+                        <Expander Header="Hệ thống" IsExpanded="True" Style="{StaticResource SidebarExpanderStyle}">
+                            <StackPanel Margin="8,8,0,0">
+                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowProfileCommand}">
+                                    <TextBlock Text="• Tài khoản và đổi mật khẩu"/>
+                                </Button>
+                                <Button Style="{StaticResource SidebarButtonStyle}" Command="{Binding ShowSettingCommand}">
+                                    <TextBlock Text="• Cài đặt hệ thống"/>
+                                </Button>
+                            </StackPanel>
+                        </Expander>
+
                     </StackPanel>
                 </ScrollViewer>
 

@@ -124,3 +124,5 @@ C:\Users\Nguyen Tien Dat\OneDrive\Desktop\DoAn_HQTCSDL\QuanLyThuVien\QuanLyThuVi
 C:\Users\Nguyen Tien Dat\OneDrive\Desktop\DoAn_HQTCSDL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
 C:\Users\Nguyen Tien Dat\OneDrive\Desktop\DoAn_HQTCSDL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
 C:\Users\Nguyen Tien Dat\OneDrive\Desktop\DoAn_HQTCSDL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyTh.B5137F7B.Up2Date
+C:\Users\Nguyen Tien Dat\OneDrive\Desktop\DoAn_HQTCSDL\QuanLyThuVien\QuanLyThuVien\obj\Debug\Views\UCProfile.g.cs
+C:\Users\Nguyen Tien Dat\OneDrive\Desktop\DoAn_HQTCSDL\QuanLyThuVien\QuanLyThuVien\obj\Debug\Views\UCProfile.baml

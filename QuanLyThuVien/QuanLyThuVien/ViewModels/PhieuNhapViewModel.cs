@@ -1,32 +1,23 @@
 ﻿using QuanLyThuVien.Models;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
 namespace QuanLyThuVien.ViewModels
 {
-    public class PhieuNhapDTO
+    public class ChiTietPhieuNhapDTO : BaseViewModel
     {
         public string MaPhieuNhap { get; set; }
-        public DateTime? NgayNhap { get; set; }
-        public string MaNV { get; set; }
-        public decimal? TongTien { get; set; }
-    }
-    public class ChiTietPhieuNhapDTO
-    {
         public string MaSach { get; set; }
         public string TenSach { get; set; }
-        public int? SoLuong { get; set; }
-        public decimal? DonGia { get; set; }
-        public decimal? ThanhTien { get; set; }
+        public int SoLuong { get; set; }
+        public decimal DonGia { get; set; }
+        public decimal ThanhTien => SoLuong * DonGia;
     }
 
-    class PhieuNhapViewModel : BaseViewModel
+    public class PhieuNhapViewModel : BaseViewModel
     {
         private string _searchKeyword;
         public string SearchKeyword
@@ -35,21 +26,20 @@ namespace QuanLyThuVien.ViewModels
             set { _searchKeyword = value; OnPropertyChanged(nameof(SearchKeyword)); }
         }
 
-        private ObservableCollection<PhieuNhapDTO> _listPhieuNhap;
-        public ObservableCollection<PhieuNhapDTO> ListPhieuNhap
+        private ObservableCollection<PhieuNhap> _listPhieuNhap;
+        public ObservableCollection<PhieuNhap> ListPhieuNhap
         {
             get { return _listPhieuNhap; }
             set { _listPhieuNhap = value; OnPropertyChanged(nameof(ListPhieuNhap)); }
         }
 
-        private PhieuNhapDTO _selectedPhieuNhap;
-        public PhieuNhapDTO SelectedPhieuNhap
+        private PhieuNhap _selectedPhieuNhap;
+        public PhieuNhap SelectedPhieuNhap
         {
             get { return _selectedPhieuNhap; }
             set
             {
                 if (_selectedPhieuNhap == value) return;
-
                 _selectedPhieuNhap = value;
                 OnPropertyChanged(nameof(SelectedPhieuNhap));
 
@@ -57,14 +47,13 @@ namespace QuanLyThuVien.ViewModels
                 {
                     MaPhieuNhap = _selectedPhieuNhap.MaPhieuNhap;
                     NgayNhap = _selectedPhieuNhap.NgayNhap;
-                    TongTien = _selectedPhieuNhap.TongTien;
+                    TongTien = _selectedPhieuNhap.TongTien ?? 0;
                     IsEditingPhieuMode = false;
-
-                    LoadChiTietPhieu();
+                    LoadChiTietPhieuNhap(MaPhieuNhap);
                 }
                 else
                 {
-                    ClearPhieuForm();
+                    ClearPhieuNhapForm();
                 }
             }
         }
@@ -83,8 +72,8 @@ namespace QuanLyThuVien.ViewModels
             set { _ngayNhap = value; OnPropertyChanged(nameof(NgayNhap)); }
         }
 
-        private decimal? _tongTien;
-        public decimal? TongTien
+        private decimal _tongTien;
+        public decimal TongTien
         {
             get { return _tongTien; }
             set { _tongTien = value; OnPropertyChanged(nameof(TongTien)); }
@@ -104,20 +93,6 @@ namespace QuanLyThuVien.ViewModels
             set { _statusMessage = value; OnPropertyChanged(nameof(StatusMessage)); }
         }
 
-        private ObservableCollection<ChiTietPhieuNhapDTO> _listChiTietPhieu;
-        public ObservableCollection<ChiTietPhieuNhapDTO> ListChiTietPhieu
-        {
-            get { return _listChiTietPhieu; }
-            set { _listChiTietPhieu = value; OnPropertyChanged(nameof(ListChiTietPhieu)); }
-        }
-
-        private ChiTietPhieuNhapDTO _selectedChiTiet;
-        public ChiTietPhieuNhapDTO SelectedChiTiet
-        {
-            get { return _selectedChiTiet; }
-            set { _selectedChiTiet = value; OnPropertyChanged(nameof(SelectedChiTiet)); }
-        }
-
         private ObservableCollection<Sach> _listSach;
         public ObservableCollection<Sach> ListSach
         {
@@ -132,18 +107,32 @@ namespace QuanLyThuVien.ViewModels
             set { _selectedMaSach = value; OnPropertyChanged(nameof(SelectedMaSach)); }
         }
 
-        private int? _soLuong;
-        public int? SoLuong
+        private string _soLuong;
+        public string SoLuong
         {
             get { return _soLuong; }
             set { _soLuong = value; OnPropertyChanged(nameof(SoLuong)); }
         }
 
-        private decimal? _donGia;
-        public decimal? DonGia
+        private string _donGia;
+        public string DonGia
         {
             get { return _donGia; }
             set { _donGia = value; OnPropertyChanged(nameof(DonGia)); }
+        }
+
+        private ObservableCollection<ChiTietPhieuNhapDTO> _listChiTietPhieu;
+        public ObservableCollection<ChiTietPhieuNhapDTO> ListChiTietPhieu
+        {
+            get { return _listChiTietPhieu; }
+            set { _listChiTietPhieu = value; OnPropertyChanged(nameof(ListChiTietPhieu)); }
+        }
+
+        private ChiTietPhieuNhapDTO _selectedChiTiet;
+        public ChiTietPhieuNhapDTO SelectedChiTiet
+        {
+            get { return _selectedChiTiet; }
+            set { _selectedChiTiet = value; OnPropertyChanged(nameof(SelectedChiTiet)); }
         }
 
         private string _chiTietStatusMessage;
@@ -158,84 +147,73 @@ namespace QuanLyThuVien.ViewModels
         public ICommand UpdateCommand { get; set; }
         public ICommand DeleteCommand { get; set; }
         public ICommand ClearCommand { get; set; }
-
         public ICommand AddChiTietCommand { get; set; }
         public ICommand DeleteChiTietCommand { get; set; }
 
         public PhieuNhapViewModel()
         {
             IsEditingPhieuMode = true;
+            NgayNhap = DateTime.Now;
+            ListChiTietPhieu = new ObservableCollection<ChiTietPhieuNhapDTO>();
+
             LoadData();
 
             SearchCommand = new RelayCommand(ExecuteSearch, CanExecuteAlways);
-            AddCommand = new RelayCommand(ExecuteAddPhieu, CanExecuteAlways);
-            UpdateCommand = new RelayCommand(ExecuteUpdatePhieu, CanExecuteAlways);
-            DeleteCommand = new RelayCommand(ExecuteDeletePhieu, CanExecuteAlways);
-            ClearCommand = new RelayCommand(ExecuteClearPhieu, CanExecuteAlways);
-
+            AddCommand = new RelayCommand(ExecuteAdd, CanExecuteAlways);
+            UpdateCommand = new RelayCommand(ExecuteUpdate, CanExecuteAlways);
+            DeleteCommand = new RelayCommand(ExecuteDelete, CanExecuteAlways);
+            ClearCommand = new RelayCommand(ExecuteClear, CanExecuteAlways);
             AddChiTietCommand = new RelayCommand(ExecuteAddChiTiet, CanExecuteAlways);
             DeleteChiTietCommand = new RelayCommand(ExecuteDeleteChiTiet, CanExecuteAlways);
         }
 
-        private bool CanExecuteAlways(object parameter) => true;
+        private bool CanExecuteAlways(object parameter)
+        {
+            return true;
+        }
 
         private void LoadData()
         {
             try
             {
                 using (var context = new QuanLyThuVienEntities())
-                { 
-                    var queryPhieu = context.PhieuNhaps.Select(p => new PhieuNhapDTO
-                    {
-                        MaPhieuNhap = p.MaPhieuNhap, 
-                        NgayNhap = p.NgayNhap,
-                        MaNV = p.MaNV,
-                        TongTien = p.TongTien
-                    }).ToList();
-                    ListPhieuNhap = new ObservableCollection<PhieuNhapDTO>(queryPhieu);
-
-                
+                {
+                    ListPhieuNhap = new ObservableCollection<PhieuNhap>(context.PhieuNhaps.ToList());
                     ListSach = new ObservableCollection<Sach>(context.Saches.ToList());
                 }
             }
             catch (Exception ex)
             {
-                StatusMessage = "Lỗi tải dữ liệu: " + ex.Message;
+                StatusMessage = ex.Message;
             }
         }
 
-        private void LoadChiTietPhieu()
+        private void LoadChiTietPhieuNhap(string maPhieu)
         {
-            if (string.IsNullOrWhiteSpace(MaPhieuNhap))
-            {
-                ListChiTietPhieu = new ObservableCollection<ChiTietPhieuNhapDTO>();
-                return;
-            }
-
             try
             {
                 using (var context = new QuanLyThuVienEntities())
                 {
-                    var queryChiTiet = (from ct in context.ChiTietPhieuNhaps
-                                        join s in context.Saches on ct.MaSach equals s.MaSach
-                                        where ct.MaPhieuNhap == MaPhieuNhap 
-                                        select new ChiTietPhieuNhapDTO
-                                        {
-                                            MaSach = ct.MaSach,
-                                            TenSach = s.TenSach,
-                                            SoLuong = ct.SoLuong,
-                                            DonGia = ct.DonGia,
-                                            ThanhTien = ct.SoLuong * ct.DonGia
-                                        }).ToList();
-
-                    ListChiTietPhieu = new ObservableCollection<ChiTietPhieuNhapDTO>(queryChiTiet);
+                    var query = from ct in context.ChiTietPhieuNhaps
+                                join s in context.Saches on ct.MaSach equals s.MaSach
+                                where ct.MaPhieuNhap == maPhieu
+                                select new ChiTietPhieuNhapDTO
+                                {
+                                    MaPhieuNhap = ct.MaPhieuNhap,
+                                    MaSach = ct.MaSach,
+                                    TenSach = s.TenSach,
+                                    SoLuong = ct.SoLuong ?? 0,
+                                    DonGia = ct.DonGia ?? 0
+                                };
+                    ListChiTietPhieu = new ObservableCollection<ChiTietPhieuNhapDTO>(query.ToList());
                 }
             }
             catch (Exception ex)
             {
-                ChiTietStatusMessage = "Lỗi tải chi tiết: " + ex.Message;
+                ChiTietStatusMessage = ex.Message;
             }
         }
+
         private void ExecuteSearch(object parameter)
         {
             try
@@ -250,28 +228,26 @@ namespace QuanLyThuVien.ViewModels
                         query = query.Where(p => p.MaPhieuNhap.ToLower().Contains(keyword));
                     }
 
-                    var result = query.Select(p => new PhieuNhapDTO
-                    {
-                        MaPhieuNhap = p.MaPhieuNhap,
-                        NgayNhap = p.NgayNhap,
-                        MaNV = p.MaNV,
-                        TongTien = p.TongTien
-                    }).ToList();
-
-                    ListPhieuNhap = new ObservableCollection<PhieuNhapDTO>(result);
+                    ListPhieuNhap = new ObservableCollection<PhieuNhap>(query.ToList());
                 }
             }
             catch (Exception ex)
             {
-                StatusMessage = "Lỗi tìm kiếm: " + ex.Message;
+                StatusMessage = ex.Message;
             }
         }
 
-        private void ExecuteAddPhieu(object parameter)
+        private void ExecuteAdd(object parameter)
         {
             if (string.IsNullOrWhiteSpace(MaPhieuNhap))
             {
                 StatusMessage = "Vui lòng nhập Mã phiếu nhập!";
+                return;
+            }
+
+            if (GlobalStore.CurrentAccount == null)
+            {
+                StatusMessage = "Lỗi xác thực. Vui lòng đăng nhập lại!";
                 return;
             }
 
@@ -285,33 +261,31 @@ namespace QuanLyThuVien.ViewModels
                         return;
                     }
 
-                    string currentMaNV = GlobalStore.CurrentAccount != null ? GlobalStore.CurrentAccount.MaNV : "NV001";
-
-                    var newPhieu = new PhieuNhap
+                    var newPhieuNhap = new PhieuNhap
                     {
                         MaPhieuNhap = MaPhieuNhap,
-                        NgayNhap = NgayNhap ?? DateTime.Now.Date,
-                        MaNV = currentMaNV,
+                        NgayNhap = NgayNhap ?? DateTime.Now,
+                        MaNV = GlobalStore.CurrentAccount.MaNV,
                         TongTien = 0
                     };
 
-                    context.PhieuNhaps.Add(newPhieu);
+                    context.PhieuNhaps.Add(newPhieuNhap);
                     context.SaveChanges();
 
                     StatusMessage = "Thêm phiếu nhập thành công!";
-                    LoadData();           
+                    LoadData();
                     SelectedPhieuNhap = ListPhieuNhap.FirstOrDefault(p => p.MaPhieuNhap == MaPhieuNhap);
                 }
             }
             catch (Exception ex)
             {
-                StatusMessage = "Lỗi: " + ex.Message;
+                StatusMessage = ex.Message;
             }
         }
 
-        private void ExecuteUpdatePhieu(object parameter)
+        private void ExecuteUpdate(object parameter)
         {
-            if (string.IsNullOrWhiteSpace(MaPhieuNhap) || IsEditingPhieuMode)
+            if (string.IsNullOrWhiteSpace(MaPhieuNhap))
             {
                 StatusMessage = "Vui lòng chọn phiếu nhập để sửa!";
                 return;
@@ -327,90 +301,103 @@ namespace QuanLyThuVien.ViewModels
                         phieu.NgayNhap = NgayNhap;
                         context.SaveChanges();
 
-                        StatusMessage = "Cập nhật ngày nhập thành công!";
+                        StatusMessage = "Cập nhật thành công!";
                         LoadData();
+                        SelectedPhieuNhap = ListPhieuNhap.FirstOrDefault(p => p.MaPhieuNhap == MaPhieuNhap);
                     }
                 }
             }
             catch (Exception ex)
             {
-                StatusMessage = "Lỗi: " + ex.Message;
+                StatusMessage = ex.Message;
             }
         }
 
-        private void ExecuteDeletePhieu(object parameter)
+        private void ExecuteDelete(object parameter)
         {
-            if (string.IsNullOrWhiteSpace(MaPhieuNhap) || IsEditingPhieuMode)
+            if (string.IsNullOrWhiteSpace(MaPhieuNhap))
             {
                 StatusMessage = "Vui lòng chọn phiếu nhập để xóa!";
                 return;
             }
 
-            MessageBoxResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa phiếu nhập này cùng với toàn bộ chi tiết sách bên trong?", "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            MessageBoxResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa phiếu nhập và toàn bộ chi tiết?", "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Warning);
             if (result == MessageBoxResult.Yes)
             {
                 try
                 {
                     using (var context = new QuanLyThuVienEntities())
                     {
-                        var listChiTiet = context.ChiTietPhieuNhaps.Where(c => c.MaPhieuNhap == MaPhieuNhap).ToList();
-                        if (listChiTiet.Any())
-                        {
-                            context.ChiTietPhieuNhaps.RemoveRange(listChiTiet);
-                        }
+                        var chiTiets = context.ChiTietPhieuNhaps.Where(c => c.MaPhieuNhap == MaPhieuNhap);
+                        context.ChiTietPhieuNhaps.RemoveRange(chiTiets);
 
                         var phieu = context.PhieuNhaps.FirstOrDefault(p => p.MaPhieuNhap == MaPhieuNhap);
                         if (phieu != null)
                         {
                             context.PhieuNhaps.Remove(phieu);
-                            context.SaveChanges();
-
-                            StatusMessage = "Xóa phiếu nhập thành công!";
-                            ExecuteClearPhieu(null);
                         }
+
+                        context.SaveChanges();
+
+                        StatusMessage = "Xóa thành công!";
+                        ExecuteClear(null);
                     }
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    StatusMessage = "Lỗi: Dữ liệu đang được sử dụng, không thể xóa!";
+                    StatusMessage = "Lỗi khi xóa: " + ex.Message;
                 }
             }
         }
 
-        private void ExecuteClearPhieu(object parameter)
+        private void ExecuteClear(object parameter)
         {
-            ClearPhieuForm();
+            ClearPhieuNhapForm();
+            StatusMessage = string.Empty;
             SearchKeyword = string.Empty;
             LoadData();
         }
 
-        private void ClearPhieuForm()
+        private void ClearPhieuNhapForm()
         {
             MaPhieuNhap = string.Empty;
             NgayNhap = DateTime.Now;
             TongTien = 0;
             IsEditingPhieuMode = true;
-            StatusMessage = string.Empty;
+
+            SelectedMaSach = null;
+            SoLuong = string.Empty;
+            DonGia = string.Empty;
             ChiTietStatusMessage = string.Empty;
 
+            ListChiTietPhieu.Clear();
             _selectedPhieuNhap = null;
             OnPropertyChanged(nameof(SelectedPhieuNhap));
-
-            ListChiTietPhieu = new ObservableCollection<ChiTietPhieuNhapDTO>();
-            ClearChiTietForm();
         }
 
         private void ExecuteAddChiTiet(object parameter)
         {
-            if (IsEditingPhieuMode || string.IsNullOrWhiteSpace(MaPhieuNhap))
+            if (string.IsNullOrWhiteSpace(MaPhieuNhap) || IsEditingPhieuMode)
             {
-                ChiTietStatusMessage = "Vui lòng chọn hoặc THÊM MỚI phiếu nhập trước khi thêm sách!";
+                ChiTietStatusMessage = "Vui lòng chọn hoặc lưu một Phiếu Nhập trước!";
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(SelectedMaSach) || SoLuong == null || SoLuong <= 0 || DonGia == null || DonGia < 0)
+            if (string.IsNullOrWhiteSpace(SelectedMaSach))
             {
-                ChiTietStatusMessage = "Vui lòng nhập đầy đủ Đầu sách, Số lượng (>0) và Đơn giá!";
+                ChiTietStatusMessage = "Vui lòng chọn Sách!";
+                return;
+            }
+
+            if (!int.TryParse(SoLuong, out int parsedSoLuong) || parsedSoLuong <= 0)
+            {
+                ChiTietStatusMessage = "Số lượng phải là số nguyên lớn hơn 0!";
+                return;
+            }
+
+            if (!decimal.TryParse(DonGia, out decimal parsedDonGia) || parsedDonGia < 0)
+            {
+                ChiTietStatusMessage = "Đơn giá không hợp lệ!";
                 return;
             }
 
@@ -418,12 +405,18 @@ namespace QuanLyThuVien.ViewModels
             {
                 using (var context = new QuanLyThuVienEntities())
                 {
-                    var chiTiet = context.ChiTietPhieuNhaps.FirstOrDefault(c => c.MaPhieuNhap == MaPhieuNhap && c.MaSach == SelectedMaSach);
-
-                    if (chiTiet != null)
+                    var phieu = context.PhieuNhaps.FirstOrDefault(p => p.MaPhieuNhap == MaPhieuNhap);
+                    if (phieu == null)
                     {
-                        chiTiet.SoLuong += SoLuong;
-                        chiTiet.DonGia = DonGia;
+                        ChiTietStatusMessage = "Phiếu nhập không tồn tại trong CSDL!";
+                        return;
+                    }
+
+                    var existingChiTiet = context.ChiTietPhieuNhaps.FirstOrDefault(c => c.MaPhieuNhap == MaPhieuNhap && c.MaSach == SelectedMaSach);
+                    if (existingChiTiet != null)
+                    {
+                        existingChiTiet.SoLuong += parsedSoLuong;
+                        existingChiTiet.DonGia = parsedDonGia;
                     }
                     else
                     {
@@ -431,23 +424,24 @@ namespace QuanLyThuVien.ViewModels
                         {
                             MaPhieuNhap = MaPhieuNhap,
                             MaSach = SelectedMaSach,
-                            SoLuong = SoLuong,
-                            DonGia = DonGia
+                            SoLuong = parsedSoLuong,
+                            DonGia = parsedDonGia
                         };
                         context.ChiTietPhieuNhaps.Add(newChiTiet);
                     }
+
                     context.SaveChanges();
+                    UpdateTongTienAndUpdateUI(context, MaPhieuNhap);
 
-                    UpdateTongTienPhieu(context);
-
-                    ChiTietStatusMessage = "Đã thêm sách vào phiếu!";
-                    LoadChiTietPhieu();
-                    LoadData();      
+                    ChiTietStatusMessage = "Thêm sách vào phiếu thành công!";
+                    SelectedMaSach = null;
+                    SoLuong = string.Empty;
+                    DonGia = string.Empty;
                 }
             }
             catch (Exception ex)
             {
-                ChiTietStatusMessage = "Lỗi thêm chi tiết: " + ex.Message;
+                ChiTietStatusMessage = ex.Message;
             }
         }
 
@@ -455,7 +449,7 @@ namespace QuanLyThuVien.ViewModels
         {
             if (SelectedChiTiet == null)
             {
-                ChiTietStatusMessage = "Vui lòng Click chuột phải vào một dòng sách và chọn 'Xóa khỏi phiếu'!";
+                ChiTietStatusMessage = "Vui lòng chọn chi tiết sách cần xóa!";
                 return;
             }
 
@@ -463,47 +457,49 @@ namespace QuanLyThuVien.ViewModels
             {
                 using (var context = new QuanLyThuVienEntities())
                 {
-                    var chiTiet = context.ChiTietPhieuNhaps.FirstOrDefault(c => c.MaPhieuNhap == MaPhieuNhap && c.MaSach == SelectedChiTiet.MaSach);
+                    var chiTiet = context.ChiTietPhieuNhaps.FirstOrDefault(c => c.MaPhieuNhap == SelectedChiTiet.MaPhieuNhap && c.MaSach == SelectedChiTiet.MaSach);
                     if (chiTiet != null)
                     {
                         context.ChiTietPhieuNhaps.Remove(chiTiet);
                         context.SaveChanges();
 
-                        UpdateTongTienPhieu(context);
-
+                        string currentMaPhieu = SelectedChiTiet.MaPhieuNhap;
+                        UpdateTongTienAndUpdateUI(context, currentMaPhieu);
                         ChiTietStatusMessage = "Đã xóa sách khỏi phiếu!";
-                        LoadChiTietPhieu();
-                        LoadData();
                     }
                 }
             }
             catch (Exception ex)
             {
-                ChiTietStatusMessage = "Lỗi xóa chi tiết: " + ex.Message;
+                ChiTietStatusMessage = ex.Message;
             }
         }
 
-        private void UpdateTongTienPhieu(QuanLyThuVienEntities context)
+        private void UpdateTongTienAndUpdateUI(QuanLyThuVienEntities context, string maPhieu)
         {
-            var phieu = context.PhieuNhaps.FirstOrDefault(p => p.MaPhieuNhap == MaPhieuNhap);
+            var phieu = context.PhieuNhaps.FirstOrDefault(p => p.MaPhieuNhap == maPhieu);
             if (phieu != null)
             {
-                decimal? total = context.ChiTietPhieuNhaps
-                                        .Where(c => c.MaPhieuNhap == MaPhieuNhap)
-                                        .Sum(c => (decimal?)(c.SoLuong * c.DonGia));
-
-                phieu.TongTien = total ?? 0;
-                TongTien = phieu.TongTien; 
+                decimal total = context.ChiTietPhieuNhaps
+                                      .Where(c => c.MaPhieuNhap == maPhieu)
+                                      .Select(c => (c.SoLuong ?? 0) * (c.DonGia ?? 0))
+                                      .DefaultIfEmpty(0)
+                                      .Sum();
+                phieu.TongTien = total;
                 context.SaveChanges();
+
+                TongTien = total;
+
+                var phieuInList = ListPhieuNhap.FirstOrDefault(p => p.MaPhieuNhap == maPhieu);
+                if (phieuInList != null)
+                {
+                    int index = ListPhieuNhap.IndexOf(phieuInList);
+                    ListPhieuNhap[index] = phieu;
+                    SelectedPhieuNhap = phieu;
+                }
+
+                LoadChiTietPhieuNhap(maPhieu);
             }
         }
-
-        private void ClearChiTietForm()
-        {
-            SelectedMaSach = null;
-            SoLuong = null;
-            DonGia = null;
-        }
-
     }
 }

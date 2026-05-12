@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="750" d:DesignWidth="1150">
     <Grid Margin="10">
-        <!--<Grid.ColumnDefinitions>
+        <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="380"/>
         </Grid.ColumnDefinitions>
@@ -36,14 +36,31 @@
 
                     <Button Grid.Column="1" Content="TÌM KIẾM" 
                             Command="{Binding SearchCommand}" 
-                            Style="{StaticResource BaseButtonStyle}" 
-                            Margin="0,2,0,12" Width="100"/>
+                            Style="{StaticResource PrimaryButtonStyle}" 
+                            Margin="0,10,0,0" Width="100"/>
                 </Grid>
             </Border>
 
             <Border Grid.Row="2" Style="{StaticResource CardStyle}" Padding="0">
                 <DataGrid ItemsSource="{Binding ListDangMuon}" 
-                          Style="{StaticResource AppDataGridStyle}" Margin="1">
+                          Style="{StaticResource AppDataGridStyle}" Margin="1"
+                          SelectedItem="{Binding SelectedPhieu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                    <DataGrid.Resources>
+                        <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource {x:Type DataGridColumnHeader}}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                        <Grid Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGrid.Resources>
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Mã Phiếu" Binding="{Binding MaPhieu}" Width="80"/>
                         <DataGridTextColumn Header="Mã ĐG" Binding="{Binding MaDG}" Width="80"/>
@@ -60,7 +77,7 @@
         <Border Grid.Column="1" Style="{StaticResource HighlightCardStyle}" VerticalAlignment="Bottom">
             <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="0,0,8,0" Margin="0,0,-8,0">
                 <StackPanel>
-                    <TextBlock Text="LẬP PHIẾU MƯỢN" Style="{StaticResource SectionTitleTextStyle}" Margin="0,0,0,24"/>
+                    <TextBlock Text="THÔNG TIN PHIẾU MƯỢN" Style="{StaticResource SectionTitleTextStyle}" Margin="0,0,0,24"/>
 
                     <Border Background="{DynamicResource Brush.Card}" CornerRadius="{StaticResource Radius.Small}" Padding="12" Margin="0,0,0,16">
                         <StackPanel>
@@ -108,27 +125,30 @@
                                        Margin="4,-8,0,8"/>
                         </StackPanel>
                     </Border>
+                    <Separator Margin="0,16,0,24" Background="{DynamicResource Brush.BorderSoft}"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
 
-                    <Button Content="GHI NHẬN MƯỢN SÁCH" 
-                            Command="{Binding MuonSachCommand}" 
-                            Style="{StaticResource PrimaryButtonStyle}" 
-                            Height="48" FontSize="15"/>
+                        <Button Grid.Row="0" Grid.Column="0" Content="✚ THÊM MỚI" Command="{Binding AddCommand}" Style="{StaticResource PrimaryButtonStyle}" Margin="0 0 10 0"/>
 
-                    <Button Content="LÀM MỚI FORM" 
-                            Command="{Binding ClearFormCommand}" 
-                            Style="{StaticResource BaseButtonStyle}" 
-                            Margin="0,12,0,0"/>
+                        <Button Grid.Row="0" Grid.Column="1" Content="✎ SỬA" Command="{Binding UpdateCommand}" Style="{StaticResource SuccessButtonStyle}" Margin="0 0 10 0"/>
 
-                    <Border Margin="0,20,0,0" Padding="12" CornerRadius="{StaticResource Radius.Small}" 
-                            Background="{DynamicResource Brush.Warning}"
-                            Visibility="{Binding HasMessage, Converter={StaticResource BooleanToVisibilityConverter}}">
-                        <TextBlock Text="{Binding StatusMessage}" 
-                                   Style="{StaticResource BodyTextStyle}" 
-                                   Foreground="{DynamicResource Brush.Danger}" 
-                                   FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center"/>
-                    </Border>
+                        <Button Grid.Row="1" Grid.Column="0" Content="✖ XÓA" Command="{Binding DeleteCommand}" Style="{StaticResource DangerButtonStyle}" Margin="0 10 10 0" />
+
+                        <Button Grid.Row="1" Grid.Column="1" Content="↻ LÀM MỚI" Command="{Binding ClearCommand}" Style="{StaticResource BaseButtonStyle}" Margin="0 10 10 0"/>
+                    </Grid>
+
+
+                    <TextBlock Text="{Binding StatusMessage}" Style="{StaticResource BodyTextStyle}" Foreground="{DynamicResource Brush.Danger}" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center"/>
                 </StackPanel>
             </ScrollViewer>
-        </Border>-->
+        </Border>
     </Grid>
 </UserControl>

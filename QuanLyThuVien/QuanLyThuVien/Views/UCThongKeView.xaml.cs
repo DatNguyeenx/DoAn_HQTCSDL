@@ -23,6 +23,7 @@ namespace QuanLyThuVien.Views
         public UCThongKeView()
         {
             InitializeComponent();
+            this.DataContext = new ViewModels.ThongKeViewModel();
         }
     }
 }

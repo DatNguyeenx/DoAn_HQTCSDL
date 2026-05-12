@@ -23,7 +23,8 @@ namespace QuanLyThuVien.Views
         public UCPhieuPhatView()
         {
             InitializeComponent();
-            
+            this.DataContext = new ViewModels.PhieuPhatViewModel();
+
         }
     }
 }

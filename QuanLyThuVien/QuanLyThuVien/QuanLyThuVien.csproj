@@ -167,6 +167,7 @@
     <Compile Include="ViewModels\NhanVienViewModel.cs" />
     <Compile Include="ViewModels\PhieuNhapViewModel.cs" />
     <Compile Include="ViewModels\PhieuPhatViewModel.cs" />
+    <Compile Include="ViewModels\ProfileViewModel.cs" />
     <Compile Include="ViewModels\SachViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\RelayCommand.cs" />
@@ -201,6 +202,9 @@
     </Compile>
     <Compile Include="Views\UCPhieuPhatView.xaml.cs">
       <DependentUpon>UCPhieuPhatView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UCProfile.xaml.cs">
+      <DependentUpon>UCProfile.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UCSachView.xaml.cs">
       <DependentUpon>UCSachView.xaml</DependentUpon>
@@ -270,6 +274,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\UCProfile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UCSachView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -322,6 +330,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\Employees\default-avatar.png" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>

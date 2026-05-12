@@ -3,44 +3,160 @@
   "WorkspaceRootPath": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\viewmodels\\thongkeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\thongkeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\views\\ucprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\viewmodels\\muonsachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\muonsachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\quanlythuvien\\viewmodels\\phieuphatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\phieuphatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\views\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\quanlythuvien\\viewmodels\\phieunhapviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\phieunhapviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\views\\ucdashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucdashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\quanlythuvien\\views\\ucphieuphatview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucphieuphatview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\quanlythuvien\\viewmodels\\nhanvienviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\nhanvienviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\views\\ucdocgiaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucdocgiaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\quanlythuvien\\views\\ucmuonsachview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucmuonsachview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\quanlythuvien\\views\\ucmuonsachview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucmuonsachview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\views\\ucprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\services\\avatardisplayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\services\\avatardisplayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\models\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\models\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\models\\model1.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\models\\model1.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\models\\model1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\models\\model1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\models\\model1.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\models\\model1.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\models\\model1.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\models\\model1.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\models\\bansaosach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\models\\bansaosach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\views\\ucthongkeview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucthongkeview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\quanlythuvien\\views\\ucphieuphatview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucphieuphatview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\models\\softwaresettingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\models\\softwaresettingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\views\\ucthongkeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucthongkeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\viewmodels\\thongkeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\thongkeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\quanlythuvien\\viewmodels\\phieuphatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\phieuphatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\viewmodels\\trasachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\trasachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\views\\uctrasachview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\uctrasachview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\quanlythuvien\\views\\ucphieuphatview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucphieuphatview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\views\\uctrasachview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\uctrasachview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\quanlythuvien\\viewmodels\\phieunhapviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\phieunhapviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\viewmodels\\muonsachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\muonsachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\quanlythuvien\\views\\ucmuonsachview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucmuonsachview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\viewmodels\\docgiaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\docgiaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\views\\ucsetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucsetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\views\\ucsachview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucsachview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\quanlythuvien\\views\\ucphieunhapview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucphieunhapview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\views\\ucnhanvienview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucnhanvienview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\views\\ucbansaosachview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\views\\ucbansaosachview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\viewmodels\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\viewmodels\\sachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\sachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\quanlythuvien\\viewmodels\\nhanvienviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\viewmodels\\nhanvienviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|c:\\users\\nguyen tien dat\\onedrive\\desktop\\doan_hqtcsdl\\quanlythuvien\\quanlythuvien\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F120F01-1F6A-48B2-AD6C-A388C3BD4DB5}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,25 +165,480 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 1048,
-          "SelectedChildIndex": 0,
+          "DockedHeight": 895,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UCMuonSachView.xaml",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCMuonSachView.xaml",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCMuonSachView.xaml",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCMuonSachView.xaml",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCMuonSachView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-11T04:21:02.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UCDocGiaView.xaml",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCDocGiaView.xaml",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCDocGiaView.xaml",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCDocGiaView.xaml",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCDocGiaView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-12T01:49:26.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UCDashboardView.xaml",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCDashboardView.xaml",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCDashboardView.xaml",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCDashboardView.xaml",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCDashboardView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-12T01:56:03.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAQwFcAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T01:30:05.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainView.xaml",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\MainView.xaml",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\MainView.xaml",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\MainView.xaml",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\MainView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-12T01:49:21.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UCProfile.xaml",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCProfile.xaml",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCProfile.xaml",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCProfile.xaml*",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCProfile.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-12T03:52:52.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UCProfile.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCProfile.xaml.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCProfile.xaml.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCProfile.xaml.cs",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCProfile.xaml.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAowFAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T03:58:59.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProfileViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\ProfileViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\ProfileViewModel.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\ProfileViewModel.cs",
+              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\ProfileViewModel.cs",
+              "ViewState": "AgIAADsCAAAAAAAAAAAowEsCAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T03:59:31.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Model1.Context.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\Model1.Context.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Models\\Model1.Context.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\Model1.Context.cs",
+              "RelativeToolTip": "QuanLyThuVien\\Models\\Model1.Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T04:01:29.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Model1.Context.tt",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\Model1.Context.tt",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Models\\Model1.Context.tt",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\Model1.Context.tt",
+              "RelativeToolTip": "QuanLyThuVien\\Models\\Model1.Context.tt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-05-12T04:01:27.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AvatarDisplayService.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Services\\AvatarDisplayService.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Services\\AvatarDisplayService.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Services\\AvatarDisplayService.cs",
+              "RelativeToolTip": "QuanLyThuVien\\Services\\AvatarDisplayService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T04:03:20.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Model1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\Model1.Designer.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Models\\Model1.Designer.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\Model1.Designer.cs",
+              "RelativeToolTip": "QuanLyThuVien\\Models\\Model1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T04:00:54.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Model1.edmx.diagram",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\Model1.edmx.diagram",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Models\\Model1.edmx.diagram",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\Model1.edmx.diagram",
+              "RelativeToolTip": "QuanLyThuVien\\Models\\Model1.edmx.diagram",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-12T04:01:24.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Model1.tt",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\Model1.tt",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Models\\Model1.tt",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\Model1.tt",
+              "RelativeToolTip": "QuanLyThuVien\\Models\\Model1.tt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-05-12T04:01:23.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BanSaoSach.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\BanSaoSach.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Models\\BanSaoSach.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\BanSaoSach.cs",
+              "RelativeToolTip": "QuanLyThuVien\\Models\\BanSaoSach.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T04:01:17.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T01:28:10.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UCThongKeView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCThongKeView.xaml.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCThongKeView.xaml.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCThongKeView.xaml.cs",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCThongKeView.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T03:32:37.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SoftwareSettingModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\SoftwareSettingModel.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Models\\SoftwareSettingModel.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Models\\SoftwareSettingModel.cs",
+              "RelativeToolTip": "QuanLyThuVien\\Models\\SoftwareSettingModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T03:44:41.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UCPhieuPhatView.xaml",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCPhieuPhatView.xaml",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCPhieuPhatView.xaml",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCPhieuPhatView.xaml",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCPhieuPhatView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-11T04:20:00.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "ThongKeViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\ThongKeViewModel.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\ThongKeViewModel.cs",
               "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\ThongKeViewModel.cs",
               "RelativeToolTip": "QuanLyThuVien\\ViewModels\\ThongKeViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAHkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-11T04:24:01.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 24,
+              "Title": "UCPhieuPhatView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCPhieuPhatView.xaml.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCPhieuPhatView.xaml.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCPhieuPhatView.xaml.cs",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCPhieuPhatView.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T04:20:16.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PhieuPhatViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\PhieuPhatViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\PhieuPhatViewModel.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\PhieuPhatViewModel.cs",
+              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\PhieuPhatViewModel.cs",
+              "ViewState": "AgIAACQBAAAAAAAAAAAQwDUBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T04:17:30.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UCTraSachView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCTraSachView.xaml.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCTraSachView.xaml.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCTraSachView.xaml.cs",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCTraSachView.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwBgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T03:11:10.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UCThongKeView.xaml",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCThongKeView.xaml",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCThongKeView.xaml",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCThongKeView.xaml",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCThongKeView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-12T01:15:34.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TraSachViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\TraSachViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\TraSachViewModel.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\TraSachViewModel.cs",
+              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\TraSachViewModel.cs",
+              "ViewState": "AgIAAAwBAAAAAAAAAAAQwBgBAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T03:08:30.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PhieuNhapViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\PhieuNhapViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\PhieuNhapViewModel.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\PhieuNhapViewModel.cs",
+              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\PhieuNhapViewModel.cs",
+              "ViewState": "AgIAAO8BAAAAAAAAAADwv/gBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T04:13:26.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UCTraSachView.xaml",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCTraSachView.xaml",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCTraSachView.xaml",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCTraSachView.xaml",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCTraSachView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-12T01:15:37.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MuonSachViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\MuonSachViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\MuonSachViewModel.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\MuonSachViewModel.cs",
+              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\MuonSachViewModel.cs",
+              "ViewState": "AgIAAI0BAAAAAAAAAAAAwM4BAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T01:16:58.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UCMuonSachView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCMuonSachView.xaml.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCMuonSachView.xaml.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCMuonSachView.xaml.cs",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCMuonSachView.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T04:21:08.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DocGiaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\DocGiaViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\DocGiaViewModel.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\DocGiaViewModel.cs",
+              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\DocGiaViewModel.cs",
+              "ViewState": "AgIAABwBAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T01:26:54.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UCSetting.xaml",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCSetting.xaml",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCSetting.xaml",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCSetting.xaml",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCSetting.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-12T01:22:04.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UCSachView.xaml",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCSachView.xaml",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCSachView.xaml",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCSachView.xaml",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCSachView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-12T01:15:32.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UCPhieuNhapView.xaml",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCPhieuNhapView.xaml",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCPhieuNhapView.xaml",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCPhieuNhapView.xaml",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCPhieuNhapView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-11T04:10:55.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UCNhanVienView.xaml",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCNhanVienView.xaml",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCNhanVienView.xaml",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCNhanVienView.xaml",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCNhanVienView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-12T01:48:01.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UCBanSaoSachView.xaml",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCBanSaoSachView.xaml",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCBanSaoSachView.xaml",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCBanSaoSachView.xaml",
+              "RelativeToolTip": "QuanLyThuVien\\Views\\UCBanSaoSachView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-12T01:49:20.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\RelayCommand.cs",
+              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T01:42:52.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SachViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\SachViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\SachViewModel.cs",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\SachViewModel.cs",
+              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\SachViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T01:42:53.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "NhanVienViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\NhanVienViewModel.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\NhanVienViewModel.cs",
@@ -75,93 +646,25 @@
               "RelativeToolTip": "QuanLyThuVien\\ViewModels\\NhanVienViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T04:23:02.021Z"
+              "WhenOpened": "2026-05-11T04:23:02.021Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UCMuonSachView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCMuonSachView.xaml.cs",
-              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCMuonSachView.xaml.cs",
-              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCMuonSachView.xaml.cs",
-              "RelativeToolTip": "QuanLyThuVien\\Views\\UCMuonSachView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T04:21:08.356Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UCMuonSachView.xaml",
-              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCMuonSachView.xaml",
-              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCMuonSachView.xaml",
-              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCMuonSachView.xaml",
-              "RelativeToolTip": "QuanLyThuVien\\Views\\UCMuonSachView.xaml",
+              "DocumentIndex": 38,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\App.xaml",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\App.xaml",
+              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\App.xaml",
+              "RelativeToolTip": "QuanLyThuVien\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-11T04:21:02.561Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UCPhieuPhatView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCPhieuPhatView.xaml.cs",
-              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCPhieuPhatView.xaml.cs",
-              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCPhieuPhatView.xaml.cs",
-              "RelativeToolTip": "QuanLyThuVien\\Views\\UCPhieuPhatView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T04:20:16.175Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UCPhieuPhatView.xaml",
-              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCPhieuPhatView.xaml",
-              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCPhieuPhatView.xaml",
-              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCPhieuPhatView.xaml",
-              "RelativeToolTip": "QuanLyThuVien\\Views\\UCPhieuPhatView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-11T04:20:00.784Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PhieuPhatViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\PhieuPhatViewModel.cs",
-              "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\PhieuPhatViewModel.cs",
-              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\PhieuPhatViewModel.cs",
-              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\PhieuPhatViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T04:17:30.862Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PhieuNhapViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\PhieuNhapViewModel.cs",
-              "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\PhieuNhapViewModel.cs",
-              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\PhieuNhapViewModel.cs",
-              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\PhieuNhapViewModel.cs",
-              "ViewState": "AgIAAIgBAAAAAAAAAAAowJQAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T04:13:26.008Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UCPhieuNhapView.xaml",
-              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCPhieuNhapView.xaml",
-              "RelativeDocumentMoniker": "QuanLyThuVien\\Views\\UCPhieuNhapView.xaml",
-              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\Views\\UCPhieuNhapView.xaml",
-              "RelativeToolTip": "QuanLyThuVien\\Views\\UCPhieuNhapView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-11T04:10:55.389Z"
+              "WhenOpened": "2026-05-12T01:18:33.067Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedHeight": 232,
+          "DockedHeight": 218,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -175,22 +678,9 @@
           ]
         },
         {
-          "DockedHeight": 57,
-          "SelectedChildIndex": 0,
+          "DockedHeight": 49,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MuonSachViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\MuonSachViewModel.cs",
-              "RelativeDocumentMoniker": "QuanLyThuVien\\ViewModels\\MuonSachViewModel.cs",
-              "ToolTip": "C:\\Users\\Nguyen Tien Dat\\OneDrive\\Desktop\\DoAn_HQTCSDL\\QuanLyThuVien\\QuanLyThuVien\\ViewModels\\MuonSachViewModel.cs",
-              "RelativeToolTip": "QuanLyThuVien\\ViewModels\\MuonSachViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T04:18:41.443Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
